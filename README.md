@@ -4,9 +4,9 @@ This tool is very cool and simple to use it.
 
 To run this Tool Just Type this commands line:
 
-# cd ApkalessTool
+cd ApkalessTool
 
-# python3 ApkalessTool.py
+python3 ApkalessTool.py
 
 Follow me on:
 
