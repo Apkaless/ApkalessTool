@@ -12,8 +12,9 @@ from pafy import new
 
 # This is Code For Hostname Tool
 
+
 def gethostbyname1():
-      os.system("clear")
+      os.system("clear") 
       os.system("figlet IP TOOL")
       print("")
      #  print("""Welcome To IP Tool\n
@@ -52,7 +53,7 @@ def gethostbyname1():
 
 def ddostool():
      os.system("clear")
-     os.system("figlet Apkaless")
+     os.system("figlet DDos Tool")
      # print("\nDDos Tool By Apkaless")
      time.sleep(1)
      print("")
@@ -123,13 +124,13 @@ def scanner():
      print("")
      print("You Selected Option: ",res)
      print("")
-     if res == "1":
+     if res == "1": # SYN ACK SCAN 
           print("Nmap Version",nmScan.nmap_version())
           print("")
           time.sleep(1)
           print("Scanning.....")
           print("")
-          nmScan.scan(host,'1-1024','-v -sS')
+          nmScan.scan(host,'1-1024','-sV')
           print(nmScan.scaninfo())
           print("")
           for host in nmScan.all_hosts():
@@ -141,6 +142,7 @@ def scanner():
                print("Protocol: %s" %(proto))
                print("")
                for key in nmScan[host]['tcp'].keys():
+                    print("--------------------")
                     print("Port: %s %s %s \n" %(key,proto,nmScan[host].tcp(key)))
           print("")
           input("Press Enter To Back..... ")
@@ -244,6 +246,7 @@ def videoDownload():
      else:
           input("Press Enter To Back.....")
           starting()
+
 def starting():
      os.system("clear")
      os.system("figlet Apkaless")
@@ -255,6 +258,36 @@ def starting():
      print("Facebook  : https://www.facebook.com/Apkaless")
      print("Instagram : https://www.instagram.com/Apkaless")
      print("")
+     print("""
+=================================================
+               created by Apkaless                 
+=================================================
+               ++++++++++++++++++++                                                                                                         
+                                                  
+                                                  
+           Apkaless                              
+       _,.                   
+     ,` -.)                  
+    ( _/-\\-._               
+   /,|`--._,-^|            ,  
+   \_| |`-._/||          , |  
+     |  `-, / |         /  /  
+     |     || |        /  /   
+      `r-._||/   __   /  /    
+  __,-<_     )`-/  `./  /    
+  \   `---    \   / /  /      
+     |           |./  /       
+     /           //  /       
+ \_/  \         |/  /        
+  |    |   _,^- /  /          
+  |    , ``  (\/  /_          
+   \,.->._    \X-=/^          
+   (  /   `-._//^`            
+    `Y-.____(__}               
+     |     {__)              
+   
+           ()   V.1.0        
+""")
      try:
           # print("Verifying The Code....")
           # time.sleep(2)
@@ -271,7 +304,8 @@ def starting():
                                         5) Wifi Password (This Option Don't Work On Linux)
 
                                         6) YouTube Video Download\n
-Press Ctrl + C To Exit From This Tool.\n                              
+                                        
+Press Ctrl + C To Exit From This Tool.\n
           Choose Option -----> """)
 
           if starthacking == "1":
@@ -316,3 +350,5 @@ starting()
 #       input("Press Enter To Exit....")
 
 # #code ended
+
+
