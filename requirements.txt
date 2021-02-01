@@ -1,4 +1,6 @@
 proxyscrape
 colorama
-nmap
 pafy
+pip uninstall nmap
+pip uninstall python-nmap
+pip3 install python-nmap
