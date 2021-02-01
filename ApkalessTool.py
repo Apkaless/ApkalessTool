@@ -17,37 +17,37 @@ from colorama import Fore, Back, Style
 
 def gethostbyname1():
      print(Fore.GREEN)
-      os.system("clear") 
-      os.system("figlet IP TOOL")
-      print("")
+     os.system("clear") 
+     os.system("figlet IP TOOL")
+     print("")
      #  print("""Welcome To IP Tool\n
      #      Creator: Apkaless\n
      #      Country: Iraq\n""")
-      hostname = input(str(Fore.GREEN + "Enter Any Host Name: "))
-      ipaddress = socket.gethostbyname(hostname)
-      time.sleep(1)
-      print("")
-      print(Fore.GREEN + "IP Address of the hostname {} is : {}" .format(hostname, Fore.BLUE + ipaddress))
-      time.sleep(1)
-      print("")
-      print(Fore.GREEN + "This Tool Was Created By Apkaless ☣")
-      time.sleep(1)
-      print("")
-      print(Fore.GREEN + "Thanks For Using My Tool ☣")
-      time.sleep(1)
-      print("")
-      print(Fore.GREEN + """Select An Action:\n
+     hostname = input(str(Fore.GREEN + "Enter Any Host Name: "))
+     ipaddress = socket.gethostbyname(hostname)
+     time.sleep(1)
+     print("")
+     print(Fore.GREEN + "IP Address of the hostname {} is : {}" .format(hostname, Fore.BLUE + ipaddress))
+     time.sleep(1)
+     print("")
+     print(Fore.GREEN + "This Tool Was Created By Apkaless ☣")
+     time.sleep(1)
+     print("")
+     print(Fore.GREEN + "Thanks For Using My Tool ☣")
+     time.sleep(1)
+     print("")
+     print(Fore.GREEN + """Select An Action:\n
                1) DDos IP
                2) Scan IP
                3) Exit\n""")
-      answer = input(Fore.GREEN + "Choose Option: ")
-      if answer == "1":
-           ddostool()
-      elif answer == "2":
-           scanner()
+     answer = input(Fore.GREEN + "Choose Option: ")
+     if answer == "1":
+          ddostool()
+     elif answer == "2":
+          scanner()
             
-      else:
-           starting()
+     else:
+          starting()
 
 # This is The End Of The Code
 
