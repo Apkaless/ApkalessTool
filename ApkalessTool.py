@@ -254,13 +254,13 @@ def starting():
      os.system("clear")
      os.system("figlet Apkaless")
      print("")
-     print(Fore.GREEN + "[x]Creator   : APKALESS")
-     print(Fore.GREEN + "[x]Country   : IRAQ")
-     print(Fore.GREEN + "[x]YouTube   : https://www.youtube.com/channel/UCghQXaAH2PXS67c84b6txKw")
-     print(Fore.GREEN + "[x]Github    : https://github.com/Apkaless")
-     print(Fore.GREEN + "[x]Facebook  : https://www.facebook.com/Apkaless")
-     print(Fore.GREEN + "[x]Instagram : https://www.instagram.com/Apkaless")
-     print(Fore.GREEN + "[x]Server    : Online")
+     print(Fore.GREEN + "[☣] Creator   : APKALESS")
+     print(Fore.GREEN + "[☣] Country   : IRAQ")
+     print(Fore.GREEN + "[☣] YouTube   : https://www.youtube.com/channel/UCghQXaAH2PXS67c84b6txKw")
+     print(Fore.GREEN + "[☣] Github    : https://github.com/Apkaless")
+     print(Fore.GREEN + "[☣] Facebook  : https://www.facebook.com/Apkaless")
+     print(Fore.GREEN + "[☣] Instagram : https://www.instagram.com/Apkaless")
+     print(Fore.GREEN + "[☣] Server    : Online")
      print(Fore.GREEN + """
 =================================================
                created by Apkaless                 
