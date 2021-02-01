@@ -250,8 +250,9 @@ def videoDownload():
           starting()
 
 def starting():
+     print(Fore.GREEN)
      os.system("clear")
-     Fore.GREEN + os.system("figlet Apkaless")
+     os.system("figlet Apkaless")
      print("")
      print(Fore.GREEN + "[x]Creator   : APKALESS")
      print(Fore.GREEN + "[x]Country   : IRAQ")
@@ -295,17 +296,17 @@ def starting():
           # time.sleep(2)
           # print("")
           starthacking = input(Fore.GREEN + """What Do You Want?\n
-                              1) Get IP Tool
+                    1) Get IP Tool
 
-                              2) Scanner Tool
+                    2) Scanner Tool
 
-                              3) DDos Tool
+                    3) DDos Tool
 
-                              4) Proxy Scraper
+                    4) Proxy Scraper
 
-                              5) Wifi Password (This Option Don't Work On Linux)
+                    5) Wifi Password (This Option Don't Work On Linux)
 
-                              6) YouTube Video Download\n
+                    6) YouTube Video Download\n
                                         
 Press Ctrl + C To Exit From This Tool.\n
           Choose Option -----> """)
@@ -324,10 +325,11 @@ Press Ctrl + C To Exit From This Tool.\n
                videoDownload()
      except KeyboardInterrupt:
           print(Fore.GREEN + " \n\nHave A Nice Day ;)\n")
+print(Fore.GREEN)
 os.system("clear")
-Fore.GREEN + os.system("Apkaless")
+os.system("figlet Apkaless")
 print("")
-print(Fore.GREEN + "Please Wait While",Fore.BLUE + "Apkaless", Fore.GREEN + "Setting Up His Own Tool")
+print(Fore.GREEN + "Please Wait While",Fore.BLUE + "Apkaless", Fore.GREEN + "Setting Up His Own Tool\n")
 time.sleep(2)
 print("Please Install The Requirements From", Fore.BLUE + "Requirements.txt")
 time.sleep(5)
