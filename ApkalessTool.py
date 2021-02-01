@@ -188,7 +188,7 @@ def wifiPassword():
                result = [b.split(":")[1][1:-1] for b in result if "Key Content" in b] # Wifi Password
                try:
                    for password in result:
-                       print(Fore.GREEN + "Wifi Name: {}\n\nPassword: {}" .format(Fore.BLUE + i,password))
+                       print(Fore.GREEN + "Wifi Name: {}\n\nPassword: {}" .format(i,password))
                except IndexError:
                     print(Fore.GREEN + "Wifi Name: {} Password: {}" .format(i,""))
           except subprocess.CalledProcessError:
@@ -253,13 +253,13 @@ def starting():
      os.system("clear")
      os.system("figlet Apkaless")
      print("")
-     print(Fore.GREEN + "Creator   : APKALESS")
-     print(Fore.GREEN + "Country   : IRAQ")
-     print(Fore.GREEN + "YouTube   : https://www.youtube.com/channel/UCghQXaAH2PXS67c84b6txKw")
-     print(Fore.GREEN + "Github    : https://github.com/Apkaless")
-     print(Fore.GREEN + "Facebook  : https://www.facebook.com/Apkaless")
-     print(Fore.GREEN + "Instagram : https://www.instagram.com/Apkaless")
-     print("")
+     print(Fore.GREEN + "[x]Creator   : APKALESS")
+     print(Fore.GREEN + "[x]Country   : IRAQ")
+     print(Fore.GREEN + "[x]YouTube   : https://www.youtube.com/channel/UCghQXaAH2PXS67c84b6txKw")
+     print(Fore.GREEN + "[x]Github    : https://github.com/Apkaless")
+     print(Fore.GREEN + "[x]Facebook  : https://www.facebook.com/Apkaless")
+     print(Fore.GREEN + "[x]Instagram : https://www.instagram.com/Apkaless")
+     print(Fore.GREEN + "[x]Server    : Online")
      print(Fore.GREEN + """
 =================================================
                created by Apkaless                 
@@ -324,6 +324,10 @@ Press Ctrl + C To Exit From This Tool.\n
                videoDownload()
      except KeyboardInterrupt:
           print(Fore.GREEN + " \n\nHave A Nice Day ;)\n")
+print(Fore.GREEN + "Please Wait While",Fore.BLUE + "Apkaless", Fore.GREEN + "Setting Up His Own Tool")
+time.sleep(2)
+print("Please Install The Requirements From", Fore.BLUE + "Requirements.txt")
+time.sleep(2)
 starting()
 
 # os.system("clear")
