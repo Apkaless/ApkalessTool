@@ -16,6 +16,7 @@ from colorama import Fore, Back, Style
 
 
 def gethostbyname1():
+     print(Fore.GREEN)
       os.system("clear") 
       os.system("figlet IP TOOL")
       print("")
@@ -54,6 +55,7 @@ def gethostbyname1():
 # This Code Of DDos Tool
 
 def ddostool():
+     print(Fore.GREEN)
      os.system("clear")
      os.system("figlet DDos Tool")
      # print("\nDDos Tool By Apkaless")
@@ -91,7 +93,7 @@ def ddostool():
           s.connect((host,port))
           s.sendto(bytes, (host,port))
           sent = sent + 1
-          print(Fore.GREEN + "Attacking %s " %(host))
+          print(Fore.GREEN + "Attacking %s packets to %s on port %s By Apkaless" %(sent,host,port))
           if port == 66534:
                port = 1
 
@@ -100,6 +102,7 @@ def ddostool():
 #This Code For Scanner tool
 
 def scanner():
+     print(Fore.GREEN)
      # print("\nWelcome To Scanner Tool")
      # print("<------------------------------------->")
      # print("Creator: Apkaless")
@@ -167,6 +170,7 @@ def scanner():
 # This The End Of The Code
 
 def scraper():
+     print(Fore.GREEN)
      os.system("clear")
      os.system("figlet PROXY SCRAPER")
      collector = proxyscrape.create_collector('default','socks4')
@@ -197,6 +201,7 @@ def wifiPassword():
      input(Fore.GREEN + "Coded By Apkaless ")
 
 def videoDownload():
+     print(Fore.GREEN)
      os.system("clear")
      os.system("figlet YouTube Video")
      url = input(Fore.GREEN + "Enter YouTube Video Link: ")
