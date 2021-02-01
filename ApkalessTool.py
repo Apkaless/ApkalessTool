@@ -336,7 +336,7 @@ os.system("figlet Apkaless")
 print("")
 print(Fore.GREEN + "Please Wait While",Fore.BLUE + "Apkaless", Fore.GREEN + "Setting Up His Own Tool\n")
 time.sleep(5)
-print(Fore.RED + "Note" ,": Please Install The Requirements From", Fore.BLUE + "Requirements.txt")
+print(Fore.RED + "Note :", Fore.GREEN + "Please Install The Requirements From", Fore.BLUE + "requirements.txt")
 time.sleep(6)
 starting()
 
