@@ -251,7 +251,7 @@ def videoDownload():
 
 def starting():
      os.system("clear")
-     os.system("figlet Apkaless")
+     Fore.GREEN + os.system("figlet Apkaless")
      print("")
      print(Fore.GREEN + "[x]Creator   : APKALESS")
      print(Fore.GREEN + "[x]Country   : IRAQ")
@@ -324,10 +324,13 @@ Press Ctrl + C To Exit From This Tool.\n
                videoDownload()
      except KeyboardInterrupt:
           print(Fore.GREEN + " \n\nHave A Nice Day ;)\n")
+os.system("clear")
+Fore.GREEN + os.system("Apkaless")
+print("")
 print(Fore.GREEN + "Please Wait While",Fore.BLUE + "Apkaless", Fore.GREEN + "Setting Up His Own Tool")
 time.sleep(2)
 print("Please Install The Requirements From", Fore.BLUE + "Requirements.txt")
-time.sleep(2)
+time.sleep(5)
 starting()
 
 # os.system("clear")
