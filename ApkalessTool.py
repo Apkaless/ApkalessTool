@@ -216,7 +216,7 @@ def videoDownload():
                print("\n",str(i),"-",stream,"\n")
                i += 1
           streamNumber = int(input(Fore.GREEN + "Enter Number 0 OR 1 : "))
-          print(Fore.GREEN + "\nYour Option : ",Fore.BLUE + streamNumber,"\n")
+          print(Fore.GREEN + "\nYour Option : ",streamNumber,"\n")
           streams[streamNumber].download()
           print(Fore.GREEN + "\nYour Video Successfully Downloaded\n")
           print(Fore.GREEN + "Your Video Path : /root\n")
@@ -336,7 +336,7 @@ os.system("figlet Apkaless")
 print("")
 print(Fore.GREEN + "Please Wait While",Fore.BLUE + "Apkaless", Fore.GREEN + "Setting Up His Own Tool\n")
 time.sleep(2)
-print("Please Install The Requirements From", Fore.BLUE + "Requirements.txt")
+print("Note : Please Install The Requirements From", Fore.BLUE + "Requirements.txt")
 time.sleep(5)
 starting()
 
