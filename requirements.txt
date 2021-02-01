@@ -2,3 +2,4 @@ proxyscrape
 colorama
 nmap
 pafy
+figlet
