@@ -386,6 +386,10 @@ except ModuleNotFoundError:
      import sys
      import time
      from colorama import Fore, Back, Style
+     os.system("clear")
+     print("Installing...")
+     time.sleep(2)
+     os.system("clear")
      os.system("pip install colorama")
      os.system("clear")
      print(Fore.RED)
