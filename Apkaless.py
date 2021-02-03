@@ -386,6 +386,7 @@ except ModuleNotFoundError:
      import sys
      import time
      from colorama import Fore, Back, Style
+     os.system("pip install colorama")
      os.system("clear")
      print(Fore.RED)
      os.system("figlet Apkaless")
