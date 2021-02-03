@@ -8,12 +8,11 @@ try:
      import proxyscrape
      import subprocess
      import os
-     from pafy import new
+     from pafy import new, youtube_dl
      import colorama 
      from colorama import Fore, Back, Style
      import marshal
      import requests
-     import youtube_dl
      # code started
 
      # This is Code For Hostname Tool
@@ -394,15 +393,14 @@ try:
      #       input("Press Enter To Exit....")
 
      # #code ended
-except ModuleNotFoundError:
+except ModuleNotFoundError and ImportError:
      import os
      import sys
      import time
      os.system("clear")
-     print("Installing...")
+     print("Colorama Is Installing...")
      time.sleep(5)
      os.system("pip install colorama")
-     os.system("pip install youtube_dl")
      from colorama import Fore, Back, Style
      os.system("clear")
      print(Fore.RED)
