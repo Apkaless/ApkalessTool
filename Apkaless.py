@@ -274,40 +274,40 @@ try:
           os.system("figlet Apkaless")
           time.sleep(1)
           print("")
-          print(Fore.GREEN + "[☣] Creator   : APKALESS")
-          print(Fore.GREEN + "[☣] Country   : IRAQ")
-          print(Fore.GREEN + "[☣] YouTube   : https://www.youtube.com/channel/UCghQXaAH2PXS67c84b6txKw")
-          print(Fore.GREEN + "[☣] Github    : https://github.com/Apkaless")
-          print(Fore.GREEN + "[☣] Facebook  : https://www.facebook.com/Apkaless")
-          print(Fore.GREEN + "[☣] Instagram : https://www.instagram.com/Apkaless")
-          print(Fore.GREEN + "[☣] Server    : Online")
+          print(Fore.GREEN + Style.NORMAL + "[☣] Creator   : ", Style.BRIGHT + "APKALESS")
+          print(Fore.GREEN + Style.NORMAL + "[☣] Country   : ", Style.BRIGHT + "IRAQ")
+          print(Fore.GREEN + Style.NORMAL + "[☣] YouTube   : ", Style.BRIGHT + "https://www.youtube.com/channel/UCghQXaAH2PXS67c84b6txKw")
+          print(Fore.GREEN + Style.NORMAL + "[☣] Github    : ", Style.BRIGHT + "https://github.com/Apkaless")
+          print(Fore.GREEN + Style.NORMAL + "[☣] Facebook  : ", Style.BRIGHT + "https://www.facebook.com/Apkaless")
+          print(Fore.GREEN + Style.NORMAL + "[☣] Instagram : ", Style.BRIGHT + "https://www.instagram.com/Apkaless")
+          print(Fore.GREEN + Style.NORMAL + "[☣] Server    : ", Style.BRIGHT + "Online")
           print(Fore.GREEN + """
      =================================================
-                    created by Apkaless The Warrior           
+              Created By Apkaless The Warrior           
      =================================================
                     ++++++++++++++++++++                                                                                                         
                                                        
                                                        
                Apkaless                              
-               _,.                   
-               ,` -.)                  
-               ( _/-\\-._               
-          /,|`--._,-^|            ,  
-          \_| |`-._/||          , |  
-               |  `-, / |         /  /  
-               |     || |        /  /   
-               `r-._||/   __   /  /    
-          __,-<_     )`-/  `./  /    
-          \   `---    \   / /  /      
-               |           |./  /       
-               /           //  /       
-          \_/  \         |/  /        
-          |    |   _,^- /  /          
-          |    , ``  (\/  /_          
-          \,.->._    \X-=/^          
-          (  /   `-._//^`            
-          `Y-.____(__}               
-               |     {__)              
+                    _,.                   
+                  ,` -.)                  
+                 ( _/-\\-._               
+                /,|`--._,-^|            ,  
+                \_| |`-._/||          , |  
+                  |   `-, /|         /  /  
+                  |     || |        /  /   
+                   `r-._||/   __   /  /    
+               __,-<_     )`-/  `./  /    
+               \   `---    \   / /  /      
+                  |           |./  /       
+                  /           //  /       
+              \_/  \         |/  /        
+               |    |   _,^- /  /          
+               |    , ``  (\/  /_          
+                \,.->._    \X-=/^          
+                (  /   `-._//^`            
+                 `Y-.____(__}               
+                  |     {__)              
 
                ()   V.1.0        
      """)
@@ -322,13 +322,11 @@ try:
 
                          3) DDos Tool
 
-                         4) Get Free BTC
+                         4) Proxy Scraper
 
-                         5) Proxy Scraper
+                         5) Wifi Password (This Option Work On Windows Only)
 
-                         6) Wifi Password (This Option Work On Windows Only)
-
-                         7) YouTube Video Download\n
+                         6) YouTube Video Download\n
                                              
      Press Ctrl + C To Exit From This Tool.\n
                Choose Option -----> """)
@@ -356,6 +354,11 @@ try:
           print("")
           print(Fore.GREEN + "Please Wait While",Fore.BLUE + "Apkaless", Fore.GREEN + "Setting Up His Own Tool\n")
           time.sleep(6)
+          os.system("clear")
+          os.system("figlet Apkaless")
+          print("")
+          print("Checking System...")
+          time.sleep(2)
           # print(Fore.RED + "Note :", Fore.GREEN + "Please Install The Requirements From", Fore.BLUE + "requirements.txt", Fore.GREEN + "If You Get Any", Fore.RED + "Error")
           starting()
      except KeyboardInterrupt:
