@@ -97,7 +97,7 @@ try:
                s.connect((host,port))
                s.sendto(bytes, (host,port))
                sent = sent + 1
-               print(Fore.GREEN + "Attacking %s packets to %s on port %s By Apkaless" %(sent,host,port))
+               print(Fore.GREEN + Style.NORMAL + "Attacking %s packets to %s on port %s By Apkaless" %(sent,host,port))
                if port == 66534:
                     port = 1
 
@@ -145,16 +145,16 @@ try:
                     print(nmScan.scaninfo())
                     print("")
                     for host in nmScan.all_hosts():
-                         print(Fore.GREEN + "Host: %s" %(Fore.BLUE + host))
+                         print(Fore.GREEN + Style.NORMAL + "Host: %s" %(Fore.GREEN + Style.BRIGHT + host))
                          print("")
-                         print(Fore.GREEN + "State: %s" %(nmScan[host].state()))
+                         print(Fore.GREEN + Style.NORMAL + "State: %s" %(Fore.GREEN + Style.BRIGHT + nmScan[host].state()))
                          print("")
                     for proto in nmScan[host].all_protocols():
-                         print(Fore.GREEN + "Protocol: %s" %(Fore.BLUE + proto))
+                         print(Fore.GREEN + Style.NORMAL + "Protocol: %s" %(Fore.GREEN + Style.BRIGHT + proto))
                          print("")
                          for key in nmScan[host]['tcp'].keys():
-                              print("--------------------")
-                              print(Fore.GREEN + "Port: %s %s %s \n" %(Fore.BLUE + key,proto,nmScan[host].tcp(key)))
+                              print(Fore.GREEN + "--------------------")
+                              print(Fore.GREEN + "Port: %s %s %s \n" %(key,proto,nmScan[host].tcp(key)))
                     print("")
                     input(Fore.GREEN + "Press Enter To Back..... ")
                     starting()
@@ -274,16 +274,16 @@ try:
           os.system("figlet Apkaless")
           time.sleep(1)
           print("")
-          print(Fore.GREEN + Style.NORMAL + "[☣] Creator   : ", Style.BRIGHT + "APKALESS")
-          print(Fore.BLACK + Style.BRIGHT + "[☣] Creator   : ", Style.BRIGHT + "ABDULLAH")
-          print(Fore.RED   + Style.NORMAL + "[☣] Creator   : ", Style.BRIGHT + "AMEER")
-          print(Fore.RED   + Style.NORMAL + "[☣] Creator   : ", Style.BRIGHT + "HUSSEIN")
-          print(Fore.GREEN + Style.NORMAL + "[☣] Country   : ", Style.BRIGHT + "IRAQ")
-          print(Fore.GREEN + Style.NORMAL + "[☣] YouTube   : ", Style.BRIGHT + "https://www.youtube.com/channel/UCghQXaAH2PXS67c84b6txKw")
-          print(Fore.GREEN + Style.NORMAL + "[☣] Github    : ", Style.BRIGHT + "https://github.com/Apkaless")
-          print(Fore.GREEN + Style.NORMAL + "[☣] Facebook  : ", Style.BRIGHT + "https://www.facebook.com/Apkaless")
-          print(Fore.GREEN + Style.NORMAL + "[☣] Instagram : ", Style.BRIGHT + "https://www.instagram.com/Apkaless")
-          print(Fore.GREEN + Style.NORMAL + "[☣] Server    : ", Style.BRIGHT + "Online")
+          print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Creator   : ", Style.BRIGHT + "APKALESS (SABAH)")
+          print(Fore.BLACK + Style.BRIGHT + "[☣]", Fore.LIGHTBLACK_EX + Style.NORMAL + " Creator   : ", Style.BRIGHT + "ABDULLAH")
+          print(Fore.RED   + Style.BRIGHT + "[☣]", Fore.RED + Style.NORMAL + " Creator   : ", Style.BRIGHT + "AMEER")
+          print(Fore.RED   + Style.BRIGHT + "[☣]", Fore.RED + Style.NORMAL + " Creator   : ", Style.BRIGHT + "HUSSEIN")
+          print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Country   : ", Style.BRIGHT + "IRAQ")
+          print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " YouTube   : ", Style.BRIGHT + "https://www.youtube.com/channel/UCghQXaAH2PXS67c84b6txKw")
+          print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Github    : ", Style.BRIGHT + "https://github.com/Apkaless")
+          print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Facebook  : ", Style.BRIGHT + "https://www.facebook.com/Apkaless")
+          print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Instagram : ", Style.BRIGHT + "https://www.instagram.com/Apkaless")
+          print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Server    : ", Style.BRIGHT + "Online")
           print(Fore.GREEN + """
      =================================================
               Created By Apkaless The Warrior           
@@ -361,6 +361,11 @@ try:
           os.system("figlet Apkaless")
           print("")
           print("Checking System...")
+          time.sleep(2)
+          os.system("clear")
+          os.system("figlet Apkaless")
+          print("")
+          print("Checking Requirements...")
           time.sleep(2)
           # print(Fore.RED + "Note :", Fore.GREEN + "Please Install The Requirements From", Fore.BLUE + "requirements.txt", Fore.GREEN + "If You Get Any", Fore.RED + "Error")
           starting()
