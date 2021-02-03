@@ -385,12 +385,11 @@ except ModuleNotFoundError:
      import os
      import sys
      import time
-     from colorama import Fore, Back, Style
      os.system("clear")
      print("Installing...")
      time.sleep(2)
-     os.system("clear")
      os.system("pip install colorama")
+     from colorama import Fore, Back, Style
      os.system("clear")
      print(Fore.RED)
      os.system("figlet Apkaless")
