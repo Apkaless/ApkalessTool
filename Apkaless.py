@@ -8,7 +8,7 @@ try:
      import proxyscrape
      import subprocess
      import os
-     from pafy import new, youtube_dl
+     from pafy import new
      import colorama 
      from colorama import Fore, Back, Style
      import marshal
@@ -393,7 +393,7 @@ try:
      #       input("Press Enter To Exit....")
 
      # #code ended
-except ModuleNotFoundError and ImportError:
+except ModuleNotFoundError:
      import os
      import sys
      import time

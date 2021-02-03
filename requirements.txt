@@ -4,5 +4,4 @@ pafy
 python-nmap
 nmap
 requests
-youtube_dl
-marshal
+youtube-dl
