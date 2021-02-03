@@ -11,6 +11,8 @@ try:
      from pafy import new
      import colorama 
      from colorama import Fore, Back, Style
+     import marshal
+     import requests
      # code started
 
      # This is Code For Hostname Tool
@@ -264,6 +266,7 @@ try:
                input(Fore.GREEN + "Press Enter To Back.....")
                starting()
 
+
      def starting():
           print(Style.BRIGHT)
           print(Fore.GREEN)
@@ -280,30 +283,30 @@ try:
           print(Fore.GREEN + "[☣] Server    : Online")
           print(Fore.GREEN + """
      =================================================
-                    created by Apkaless                 
+                    created by Apkaless The Warrior           
      =================================================
                     ++++++++++++++++++++                                                                                                         
                                                        
                                                        
                Apkaless                              
-                  _,.                   
-                ,` -.)                  
+               _,.                   
+               ,` -.)                  
                ( _/-\\-._               
-              /,|`--._,-^|            ,  
-              \_| |`-._/||          , |  
-                |  `-, / |         /  /  
-                |     || |        /  /   
-                 `r-._||/   __   /  /    
-             __,-<_     )`-/  `./  /    
-             \   `---    \   / /  /      
-                |           |./  /       
-                /           //  /       
-            \_/  \         |/  /        
-             |    |   _,^- /  /          
-             |    , ``  (\/  /_          
-             \,.->._    \X-=/^          
-             (  /   `-._//^`            
-              `Y-.____(__}               
+          /,|`--._,-^|            ,  
+          \_| |`-._/||          , |  
+               |  `-, / |         /  /  
+               |     || |        /  /   
+               `r-._||/   __   /  /    
+          __,-<_     )`-/  `./  /    
+          \   `---    \   / /  /      
+               |           |./  /       
+               /           //  /       
+          \_/  \         |/  /        
+          |    |   _,^- /  /          
+          |    , ``  (\/  /_          
+          \,.->._    \X-=/^          
+          (  /   `-._//^`            
+          `Y-.____(__}               
                |     {__)              
 
                ()   V.1.0        
@@ -319,11 +322,13 @@ try:
 
                          3) DDos Tool
 
-                         4) Proxy Scraper
+                         4) Get Free BTC
 
-                         5) Wifi Password (This Option Don't Work On Linux)
+                         5) Proxy Scraper
 
-                         6) YouTube Video Download\n
+                         6) Wifi Password (This Option Work On Windows Only)
+
+                         7) YouTube Video Download\n
                                              
      Press Ctrl + C To Exit From This Tool.\n
                Choose Option -----> """)
@@ -340,6 +345,7 @@ try:
                     wifiPassword()
                if starthacking == "6":
                     videoDownload()
+
           except KeyboardInterrupt:
                print(Fore.GREEN + Style.BRIGHT + " \n\nHave A Nice Day ;)\n")
      try:
@@ -397,6 +403,9 @@ except ModuleNotFoundError:
      time.sleep(1)
      print(Fore.RED + Style.BRIGHT + "ERROR error\n")
      print(Fore.BLUE + "Installation : \n")
-     print(Fore.CYAN + "1)", Fore.RED + "Please Open", Fore.BLUE + "README.md", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "cat README.md\n")
-     print(Fore.CYAN + "2)", Fore.RED + "Install The Requirements From", Fore.BLUE + "requirements.txt", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "python3 -m pip install -r requirements.txt\n")
-
+     print(Fore.CYAN + "1)", Fore.RED + "Install", Fore.BLUE + "figlet", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.YELLOW + "(For Linux : apt install figlet)", Fore.GREEN + "(For Termux : pkg install figlet)", Fore.BLACK + "(For Ish IOS : apk add figlet\n)")
+     print(Fore.CYAN + "2)", Fore.RED + "Please Open", Fore.BLUE + "README.md", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "cat README.md\n")
+     print(Fore.CYAN + "3)", Fore.RED + "Install The Requirements From", Fore.BLUE + "requirements.txt", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "python3 -m pip install -r requirements.txt\n")
+     print(Fore.CYAN + "4)", Fore.BLUE + "Enjoy:)\n")
+     
+     

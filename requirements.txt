@@ -3,3 +3,4 @@ colorama
 pafy
 python-nmap
 nmap
+requests
