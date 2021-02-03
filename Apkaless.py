@@ -13,6 +13,7 @@ try:
      from colorama import Fore, Back, Style
      import marshal
      import requests
+     import youtube_dl
      # code started
 
      # This is Code For Hostname Tool
@@ -399,8 +400,9 @@ except ModuleNotFoundError:
      import time
      os.system("clear")
      print("Installing...")
-     time.sleep(2)
+     time.sleep(5)
      os.system("pip install colorama")
+     os.system("pip install youtube_dl")
      from colorama import Fore, Back, Style
      os.system("clear")
      print(Fore.RED)

@@ -4,4 +4,3 @@ pafy
 python-nmap
 nmap
 requests
-youtube-dl
