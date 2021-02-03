@@ -13,6 +13,7 @@ try:
      from colorama import Fore, Back, Style
      import marshal
      import requests
+     import youtube_dl
      # code started
 
      # This is Code For Hostname Tool
@@ -410,5 +411,3 @@ except ModuleNotFoundError:
      print(Fore.CYAN + "2)", Fore.RED + "Please Open", Fore.BLUE + "README.md", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "cat README.md\n")
      print(Fore.CYAN + "3)", Fore.RED + "Install The Requirements From", Fore.BLUE + "requirements.txt", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "python3 -m pip install -r requirements.txt\n")
      print(Fore.CYAN + "4)", Fore.BLUE + "Enjoy:)\n")
-     
-     
