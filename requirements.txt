@@ -1,4 +1,4 @@
 proxyscrape
 colorama
 pafy
-figlet
+python-nmap

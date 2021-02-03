@@ -4,6 +4,12 @@ This tool is very cool and simple to use it.
 
 To run this Tool Just Type this commands line:
 
+Linux : apt install figlet
+
+Termux : pkg install figlet
+
+Ish IOS : apk add figlet
+
 pip uninstall nmap
 
 pip uninstall python-nmap
