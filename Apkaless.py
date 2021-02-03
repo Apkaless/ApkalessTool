@@ -13,7 +13,6 @@ try:
      from colorama import Fore, Back, Style
      import marshal
      import requests
-     import youtube_dl
      # code started
 
      # This is Code For Hostname Tool
