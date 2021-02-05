@@ -13,6 +13,7 @@ try:
      from colorama import Fore, Back, Style
      import marshal
      import requests
+     import platform
      # code started
 
      # This is Code For Hostname Tool
@@ -265,12 +266,7 @@ try:
           else:
                input(Fore.GREEN + "Press Enter To Back.....")
                starting()
-          
-     def WifiCracker():
-          os.system("clear")
-          os.system("figlet Wifi Hack")
-          print()
-          __main__.entry_point()
+
 
      def starting():
           print(Style.BRIGHT)
@@ -334,7 +330,9 @@ try:
 
                          5) Wifi Password (This Option Work On Windows Only)
 
-                         6) YouTube Video Download\n
+                         6) YouTube Video Download
+                         
+                         7) System Informations\n
                                              
      Press Ctrl + C To Exit From This Tool.\n
                Choose Option -----> """)
@@ -351,6 +349,27 @@ try:
                     wifiPassword()
                if starthacking == "6":
                     videoDownload()
+               if starthacking == "7":
+                   os.system("clear")
+                   os.system("figlet Sys Info")
+                   print("")
+                   time.sleep(2)
+                   uname = platform.uname()
+                   system = platform.system()
+                   node = platform.node()
+                   release = platform.release()
+                   version = platform.version()
+                   machine = platform.machine()
+                   processor = platform.processor()
+
+                   print(Fore.GREEN + Style.NORMAL + "System:",Fore.GREEN + Style.BRIGHT + system,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "Node:",  Fore.GREEN + Style.BRIGHT + node,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "Release:",Fore.GREEN + Style.BRIGHT + release,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "Version:",Fore.GREEN + Style.BRIGHT + version,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "Machine:",Fore.GREEN + Style.BRIGHT + machine,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "Processor:",Fore.GREEN + Style.BRIGHT + processor,"\n")
+
+
 
           except KeyboardInterrupt:
                print(Fore.GREEN + Style.BRIGHT + " \n\nHave A Nice Day ;)\n")
@@ -408,8 +427,8 @@ except ModuleNotFoundError:
      import sys
      import time
      os.system("clear")
-     print("Colorama Is Installing...")
-     time.sleep(5)
+     print("Please Wait")
+     time.sleep(2)
      os.system("pip install colorama")
      from colorama import Fore, Back, Style
      os.system("clear")
