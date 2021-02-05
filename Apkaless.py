@@ -13,7 +13,6 @@ try:
      from colorama import Fore, Back, Style
      import marshal
      import requests
-     from wifite import __main__
      # code started
 
      # This is Code For Hostname Tool
@@ -253,9 +252,9 @@ try:
 
           streamType = input(Fore.GREEN + """Select Option:
                                         
-                              1) Video 
+                    1) Video 
 
-                              2) Audio File
+                    2) Audio File
 
           Enter Number 1 OR 2 : """)
 
@@ -331,13 +330,11 @@ try:
 
                          3) DDos Tool
 
-                         4) Wifi Password Cracker
+                         4) Proxy Scraper
 
-                         5) Proxy Scraper
+                         5) Wifi Password (This Option Work On Windows Only)
 
-                         6) Wifi Password (This Option Work On Windows Only)
-
-                         7) YouTube Video Download\n
+                         6) YouTube Video Download\n
                                              
      Press Ctrl + C To Exit From This Tool.\n
                Choose Option -----> """)
@@ -349,12 +346,10 @@ try:
                if starthacking == "3":
                     ddostool()
                if starthacking == "4":
-                    WifiCracker()
-               if starthacking == "5":
                     scraper()
-               if starthacking == "6":
+               if starthacking == "5":
                     wifiPassword()
-               if starthacking == "7":
+               if starthacking == "6":
                     videoDownload()
 
           except KeyboardInterrupt:
