@@ -13,6 +13,7 @@ try:
      from colorama import Fore, Back, Style
      import marshal
      import requests
+     from wifite import __main__
      # code started
 
      # This is Code For Hostname Tool
@@ -265,7 +266,12 @@ try:
           else:
                input(Fore.GREEN + "Press Enter To Back.....")
                starting()
-
+          
+     def WifiCracker():
+          os.system("clear")
+          os.system("figlet Wifi Hack")
+          print()
+          __main__.entry_point()
 
      def starting():
           print(Style.BRIGHT)
@@ -312,7 +318,7 @@ try:
                  `Y-.____(__}               
                   |     {__)              
 
-               ()   V.1.0        
+                      ()   V.1.0        
      """)
           try:
                # print("Verifying The Code....")
@@ -325,11 +331,13 @@ try:
 
                          3) DDos Tool
 
-                         4) Proxy Scraper
+                         4) Wifi Password Cracker
 
-                         5) Wifi Password (This Option Work On Windows Only)
+                         5) Proxy Scraper
 
-                         6) YouTube Video Download\n
+                         6) Wifi Password (This Option Work On Windows Only)
+
+                         7) YouTube Video Download\n
                                              
      Press Ctrl + C To Exit From This Tool.\n
                Choose Option -----> """)
@@ -341,10 +349,12 @@ try:
                if starthacking == "3":
                     ddostool()
                if starthacking == "4":
-                    scraper()
+                    WifiCracker()
                if starthacking == "5":
-                    wifiPassword()
+                    scraper()
                if starthacking == "6":
+                    wifiPassword()
+               if starthacking == "7":
                     videoDownload()
 
           except KeyboardInterrupt:
