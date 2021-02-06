@@ -18,6 +18,19 @@ try:
      # code started
 
      # This is Code For Hostname Tool
+     def updateTool():
+          os.system("clear")
+          time.sleep(2)
+          print("Getting Premssion...")
+          time.sleep(2)
+          os.system("clear")
+          print("Updating...")
+          time.sleep(2)
+          os.system("chmod +x update.sh")
+          time.sleep(2)
+          print("All Done")
+          time.sleep(2)
+          exit()
 
      def gethostbyname1():
           print(Style.BRIGHT)
@@ -350,7 +363,9 @@ try:
 
                          7) Who Is On My Wifi
                          
-                         8) System Informations\n
+                         8) System Informations
+                         
+                         9) Update Tool\n
                                              
      Press Ctrl + C To Exit From This Tool.\n
                Choose Option -----> """)
@@ -381,6 +396,8 @@ try:
                    version = platform.version()
                    machine = platform.machine()
                    processor = platform.processor()
+               if starthacking == "9":
+                    updateTool()
 
                    print(Fore.GREEN + Style.NORMAL + "System:",Fore.GREEN + Style.BRIGHT + system,"\n")
                    print(Fore.GREEN + Style.NORMAL + "Node:",  Fore.GREEN + Style.BRIGHT + node,"\n")
