@@ -32,5 +32,6 @@ git clone https://github.com/Apkaless/ApkalessTool
 clear
 cd ApkalessTool
 sleep 2
-echo"Please Wait..."
+echo -e "${GREEN}"
+echo "Please Wait..."
 python3 Apkaless.py
