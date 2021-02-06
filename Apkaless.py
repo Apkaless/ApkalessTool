@@ -26,7 +26,7 @@ try:
           os.system("clear")
           print("Updating...")
           time.sleep(2)
-          os.system("chmod +x update.sh\n")
+          print(os.system("chmod +x update.sh"))
           time.sleep(2)
           print("All Done\n")
           time.sleep(2)
@@ -400,12 +400,12 @@ try:
                if starthacking == "9":
                     updateTool()
 
-               print(Fore.GREEN + Style.NORMAL + "System:",Fore.BLUE + Style.BRIGHT + system,"\n")
-               print(Fore.GREEN + Style.NORMAL + "Node:",  Fore.BLUE + Style.BRIGHT + node,"\n")
-               print(Fore.GREEN + Style.NORMAL + "Release:",Fore.BLUE + Style.BRIGHT + release,"\n")
-               print(Fore.GREEN + Style.NORMAL + "Version:",Fore.BLUE + Style.BRIGHT + version,"\n")
-               print(Fore.GREEN + Style.NORMAL + "Machine:",Fore.BLUE + Style.BRIGHT + machine,"\n")
-               print(Fore.GREEN + Style.NORMAL + "Processor:",Fore.BLUE + Style.BRIGHT + processor,"\n")
+               print(Fore.GREEN + Style.NORMAL + "System:",Fore.RED + Style.BRIGHT + system,"\n")
+               print(Fore.GREEN + Style.NORMAL + "Node:",  Fore.RED + Style.BRIGHT + node,"\n")
+               print(Fore.GREEN + Style.NORMAL + "Release:",Fore.RED + Style.BRIGHT + release,"\n")
+               print(Fore.GREEN + Style.NORMAL + "Version:",Fore.RED + Style.BRIGHT + version,"\n")
+               print(Fore.GREEN + Style.NORMAL + "Machine:",Fore.RED + Style.BRIGHT + machine,"\n")
+               print(Fore.GREEN + Style.NORMAL + "Processor:",Fore.RED + Style.BRIGHT + processor,"\n")
 
 
 
