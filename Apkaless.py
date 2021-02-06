@@ -30,7 +30,7 @@ try:
           time.sleep(2)
           print("All Done\n")
           time.sleep(2)
-          
+
      def gethostbyname1():
           print(Style.BRIGHT)
           print(Fore.GREEN)
@@ -303,7 +303,7 @@ try:
           os.system("figlet Apkaless")
           time.sleep(1)
           print("")
-          print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.RED + Style.NORMAL + " Creator   : ", Style.BRIGHT + "APKALESS (SABAH)")
+          print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Creator   : ", Style.BRIGHT + "APKALESS (SABAH)")
           print(Fore.BLACK + Style.BRIGHT + "[☣]", Fore.LIGHTBLACK_EX + Style.NORMAL + " Creator   : ", Style.BRIGHT + "ABDULLAH")
           print(Fore.RED   + Style.BRIGHT + "[☣]", Fore.RED + Style.NORMAL + " Creator   : ", Style.BRIGHT + "AMEER")
           print(Fore.RED   + Style.BRIGHT + "[☣]", Fore.RED + Style.NORMAL + " Creator   : ", Style.BRIGHT + "HUSSEIN")
@@ -395,15 +395,20 @@ try:
                    version = platform.version()
                    machine = platform.machine()
                    processor = platform.processor()
+
+                   print(Fore.GREEN + Style.NORMAL + "System:",Fore.BLUE + Style.BRIGHT + system,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "Node:",  Fore.BLUE + Style.BRIGHT + node,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "Release:",Fore.BLUE + Style.BRIGHT + release,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "Version:",Fore.BLUE + Style.BRIGHT + version,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "Machine:",Fore.BLUE + Style.BRIGHT + machine,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "Processor:",Fore.BLUE + Style.BRIGHT + processor,"\n")
+                   input("Press Enter To Back...")
+                   starting()
+
+
+
                if starthacking == "9":
                     updateTool()
-
-                    print(Fore.GREEN + Style.NORMAL + "System:",Fore.BLUE + Style.BRIGHT + system,"\n")
-                    print(Fore.GREEN + Style.NORMAL + "Node:",  Fore.BLUE + Style.BRIGHT + node,"\n")
-                    print(Fore.GREEN + Style.NORMAL + "Release:",Fore.BLUE + Style.BRIGHT + release,"\n")
-                    print(Fore.GREEN + Style.NORMAL + "Version:",Fore.BLUE + Style.BRIGHT + version,"\n")
-                    print(Fore.GREEN + Style.NORMAL + "Machine:",Fore.BLUE + Style.BRIGHT + machine,"\n")
-                    print(Fore.GREEN + Style.NORMAL + "Processor:",Fore.BLUE + Style.BRIGHT + processor,"\n")
 
 
 
