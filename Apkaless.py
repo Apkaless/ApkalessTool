@@ -396,12 +396,12 @@ try:
                    machine = platform.machine()
                    processor = platform.processor()
 
-                   print(Fore.GREEN + Style.NORMAL + "System:",Fore.LIGHTGREEN_EX + Style.NORMAL + system,"\n")
-                   print(Fore.GREEN + Style.NORMAL + "Node:",  Fore.LIGHTGREEN_EX + Style.NORMAL + node,"\n")
-                   print(Fore.GREEN + Style.NORMAL + "Release:",Fore.LIGHTGREEN_EX + Style.NORMAL + release,"\n")
-                   print(Fore.GREEN + Style.NORMAL + "Version:",Fore.LIGHTGREEN_EX + Style.NORMAL + version,"\n")
-                   print(Fore.GREEN + Style.NORMAL + "Machine:",Fore.LIGHTGREEN_EX + Style.NORMAL + machine,"\n")
-                   print(Fore.GREEN + Style.NORMAL + "Processor:",Fore.LIGHTGREEN_EX + Style.NORMAL + processor,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "System:",Fore.LIGHTMAGENTA_EX + Style.NORMAL + system,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "Node:",  Fore.LIGHTMAGENTA_EX + Style.NORMAL + node,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "Release:",Fore.LIGHTMAGENTA_EX + Style.NORMAL + release,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "Version:",Fore.LIGHTMAGENTA_EX + Style.NORMAL + version,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "Machine:",Fore.LIGHTMAGENTA_EX + Style.NORMAL + machine,"\n")
+                   print(Fore.GREEN + Style.NORMAL + "Processor:",Fore.LIGHTMAGENTA_EX + Style.NORMAL + processor,"\n")
                    input("Press Enter To Back...")
                    starting()
 
