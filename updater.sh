@@ -25,9 +25,11 @@ echo "  ███    █▀      ███    █▀  ████████�
 echo ""
 sleep 2
 cd ..
+sleep 2
 rm -r ApkalessTool
 sleep 2
 git clone https://github.com/Apkaless/ApkalessTool
 clear
 cd ApkalessTool
+echo"Please Wait..."
 python3 Apkaless.py
