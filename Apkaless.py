@@ -347,7 +347,8 @@ try:
                # print("Verifying The Code....")
                # time.sleep(2)
                # print("")
-               starthacking = input(Fore.GREEN + Style.BRIGHT + """What Do You Want?\n
+
+               print(Fore.GREEN + Style.BRIGHT + """What Do You Want?\n
                          [1] Get IP Tool
 
                          [2] Scanner Tool
@@ -364,9 +365,12 @@ try:
                          
                          [8] System Informations
                          
-                         [9] Update Tool\n
+                         [9] Update Tool\n""",
                                              
-     """,      print("Press", Fore.BLUE + Style.NORMAL + "Ctrl", "+", Fore.RED + Style.NORMAL + "C", "To Exit From This Tool.\n"),"""
+          "\nPress", Fore.BLUE + Style.NORMAL + "Ctrl", Fore.GREEN + Style.BRIGHT + "+", Fore.RED + Style.NORMAL + "C", Fore.GREEN + Style.BRIGHT + "To Exit From This Tool.\n")
+
+               starthacking = input("""
+               
                Choose Option -----> """)
 
                if starthacking == "1":
