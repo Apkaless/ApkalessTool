@@ -399,12 +399,12 @@ try:
                if starthacking == "9":
                     updateTool()
 
-               print(Fore.GREEN + Style.NORMAL + "System:",Fore.GREEN + Style.BRIGHT + system,"\n")
-               print(Fore.GREEN + Style.NORMAL + "Node:",  Fore.GREEN + Style.BRIGHT + node,"\n")
-               print(Fore.GREEN + Style.NORMAL + "Release:",Fore.GREEN + Style.BRIGHT + release,"\n")
-               print(Fore.GREEN + Style.NORMAL + "Version:",Fore.GREEN + Style.BRIGHT + version,"\n")
-               print(Fore.GREEN + Style.NORMAL + "Machine:",Fore.GREEN + Style.BRIGHT + machine,"\n")
-               print(Fore.GREEN + Style.NORMAL + "Processor:",Fore.GREEN + Style.BRIGHT + processor,"\n")
+               print(Fore.GREEN + Style.NORMAL + "System:",Fore.BLUE + Style.BRIGHT + system,"\n")
+               print(Fore.GREEN + Style.NORMAL + "Node:",  Fore.BLUE + Style.BRIGHT + node,"\n")
+               print(Fore.GREEN + Style.NORMAL + "Release:",Fore.BLUE + Style.BRIGHT + release,"\n")
+               print(Fore.GREEN + Style.NORMAL + "Version:",Fore.BLUE + Style.BRIGHT + version,"\n")
+               print(Fore.GREEN + Style.NORMAL + "Machine:",Fore.BLUE + Style.BRIGHT + machine,"\n")
+               print(Fore.GREEN + Style.NORMAL + "Processor:",Fore.BLUE + Style.BRIGHT + processor,"\n")
 
 
 
