@@ -12,7 +12,7 @@ WHITE='\e[37m'
 NC='\e[0m'
 purpal='\033[35m'
 
-echo -e "${BLUE}"
+echo -e "${ORANGE}"
 echo ""
 echo "   ▄█    █▄       ▄████████  ▄████████    ▄█   ▄█▄  ▄█  ███▄▄▄▄      ▄██████▄           ███      ▄██████▄   ▄██████▄   ▄█       ";
 echo "  ███    ███     ███    ███ ███    ███   ███ ▄███▀ ███  ███▀▀▀██▄   ███    ███      ▀█████████▄ ███    ███ ███    ███ ███       ";
@@ -24,7 +24,6 @@ echo "  ███    ███     ███    ███ ███    ███
 echo "  ███    █▀      ███    █▀  ████████▀    ███   ▀█▀ █▀    ▀█   █▀    ████████▀          ▄████▀    ▀██████▀   ▀██████▀  █████▄▄██ ";
 echo ""
 cd ..
-rm -r ApkalessTool
+rm -r "ApkalessTool"
 clear
 git clone https://github.com/Apkaless/ApkalessTool
-clear
