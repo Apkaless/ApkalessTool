@@ -26,11 +26,12 @@ try:
           os.system("clear")
           print("Updating...")
           time.sleep(2)
-          os.system("chmod +x update.sh")
+          os.system("chmod +x update.sh\n")
           time.sleep(2)
-          print("All Done")
+          print("All Done\n")
           time.sleep(2)
-          exit()
+          input("Press Enter To Run The Tool...")
+          starting()
 
      def gethostbyname1():
           print(Style.BRIGHT)

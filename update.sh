@@ -29,4 +29,3 @@ git clone https://github.com/Apkaless/ApkalessTool
 clear
 cd ApkalessTool
 clear
-python3 Apkaless.py
