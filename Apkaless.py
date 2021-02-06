@@ -14,6 +14,7 @@ try:
      import marshal
      import requests
      import platform
+     import who_is_on_my_wifi
      # code started
 
      # This is Code For Hostname Tool
@@ -212,6 +213,21 @@ try:
           print("")
           input(Fore.GREEN + "Coded By Apkaless ")
 
+     def whoIsOnMyWifi():
+          os.system("clear")
+          os.system("figlet Who Is On My Wifi")
+          print("")
+
+          who = who_is_on_my_wifi.who()
+
+          for i in who:
+               time.sleep(1)
+               print(Fore.BLUE + Style.NORMAL + "====================================================================================================\n")
+               print(Fore.GREEN + Style.NORMAL + i[0], Style.BRIGHT + i[1], "\n", Style.NORMAL + i[2], Style.BRIGHT + i[3], "\n", Style.NORMAL + i[4], Style.BRIGHT + i[5],"\n")
+          print("Apkaless The Warrior\n")
+          input("Press Enter To Back...")
+          starting()
+
      def videoDownload():
           print(Style.BRIGHT)
           print(Fore.GREEN)
@@ -331,8 +347,10 @@ try:
                          5) Wifi Password (This Option Work On Windows Only)
 
                          6) YouTube Video Download
+
+                         7) Who Is On My Wifi
                          
-                         7) System Informations\n
+                         8) System Informations\n
                                              
      Press Ctrl + C To Exit From This Tool.\n
                Choose Option -----> """)
@@ -350,6 +368,8 @@ try:
                if starthacking == "6":
                     videoDownload()
                if starthacking == "7":
+                    whoIsOnMyWifi()
+               if starthacking == "8":
                    os.system("clear")
                    os.system("figlet Sys Info")
                    print("")
