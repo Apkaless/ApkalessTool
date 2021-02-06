@@ -19,6 +19,12 @@ try:
 
      # This is Code For Hostname Tool
 
+     if platform.machine()=='x86_64':
+          print("x86_64")
+     else:
+          print("Not x86_64")
+     time.sleep(10)
+
      def gethostbyname1():
           print(Style.BRIGHT)
           print(Fore.GREEN)
