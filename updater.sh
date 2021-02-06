@@ -12,7 +12,7 @@ WHITE='\e[37m'
 NC='\e[0m'
 purpal='\033[35m'
 
-echo -e "${ORANGE}"
+echo -e "${BLACK}"
 echo ""
 echo "   ▄█    █▄       ▄████████  ▄████████    ▄█   ▄█▄  ▄█  ███▄▄▄▄      ▄██████▄           ███      ▄██████▄   ▄██████▄   ▄█       ";
 echo "  ███    ███     ███    ███ ███    ███   ███ ▄███▀ ███  ███▀▀▀██▄   ███    ███      ▀█████████▄ ███    ███ ███    ███ ███       ";
@@ -30,3 +30,4 @@ sleep 2
 git clone https://github.com/Apkaless/ApkalessTool
 clear
 cd ApkalessTool
+python3 Apkaless.py
