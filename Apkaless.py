@@ -366,8 +366,8 @@ try:
                          
                          [9] Update Tool\n
                                              
-     Press Ctrl + C To Exit From This Tool.\n
-               Choose Option -----> """)
+     Press""", Fore.BLUE + Style.NORMAL + "Ctrl" "+", Fore.RED + Style.NORMAL + "C", "To Exit From This Tool.\n
+               "Choose Option -----> "")
 
                if starthacking == "1":
                     gethostbyname1()
