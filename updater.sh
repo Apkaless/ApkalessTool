@@ -31,5 +31,6 @@ sleep 2
 git clone https://github.com/Apkaless/ApkalessTool
 clear
 cd ApkalessTool
+sleep 2
 echo"Please Wait..."
 python3 Apkaless.py
