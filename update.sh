@@ -24,6 +24,8 @@ echo "  ███    ███     ███    ███ ███    ███
 echo "  ███    █▀      ███    █▀  ████████▀    ███   ▀█▀ █▀    ▀█   █▀    ████████▀          ▄████▀    ▀██████▀   ▀██████▀  █████▄▄██ ";
 echo ""
 cd ..
-rm -r "ApkalessTool"
+rm -r ApkalessTool
 clear
 git clone https://github.com/Apkaless/ApkalessTool
+clear
+cd ApkalessTool
