@@ -349,23 +349,23 @@ try:
                # print("")
 
                print(Fore.GREEN + Style.BRIGHT + """What Do You Want?\n
-                         [1] Get IP Tool
+                    [1] Get IP Tool
 
-                         [2] Scanner Tool
+                    [2] Scanner Tool
 
-                         [3] DDos Tool
+                    [3] DDos Tool
 
-                         [4] Proxy Scraper
+                    [4] Proxy Scraper
 
-                         [5] Wifi Password (This Option Work On Windows Only)
+                    [5] Wifi Password (This Option Work On Windows Only)
 
-                         [6] YouTube Video Download
+                    [6] YouTube Video Download
 
-                         [7] Who Is On My Wifi
-                         
-                         [8] System Informations
-                         
-                         [9] Update Tool\n""",
+                    [7] Who Is On My Wifi
+                    
+                    [8] System Informations
+                    
+                    [9] Update Tool\n""",
                                              
           "\nPress", Fore.BLUE + Style.NORMAL + "Ctrl", Fore.GREEN + Style.BRIGHT + "+", Fore.RED + Style.NORMAL + "C", Fore.GREEN + Style.BRIGHT + "To Exit From This Tool.\n")
 
