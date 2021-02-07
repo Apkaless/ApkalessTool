@@ -315,7 +315,7 @@ try:
           print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Instagram : ", Style.BRIGHT + "https://www.instagram.com/Apkaless")
           print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Server    : ", Style.BRIGHT + "Online")
           print(Fore.GREEN + """
-          '================================================='
+'================================================='
 '               Created by Apkaless               ' 
 '================================================='
 '               ++++++++++++++++++++              '
@@ -462,7 +462,6 @@ try:
           print("")
           print("Checking Requirements...")
           time.sleep(2)
-          os.system("clear")
           # print(Fore.RED + "Note :", Fore.GREEN + "Please Install The Requirements From", Fore.BLUE + "requirements.txt", Fore.GREEN + "If You Get Any", Fore.RED + "Error")
           starting()
      except KeyboardInterrupt:
