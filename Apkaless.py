@@ -444,7 +444,7 @@ try:
                timeout = 5
                request = requests.get(url, timeout=timeout)
                print("Connected")
-               time.sleep(2)
+               time.sleep(1)
           except (requests.ConnectionError, requests.Timeout) as exception:
                print("No Internet Connection.")
                exit()
