@@ -85,7 +85,7 @@ try:
           # print("")
           #####################################################
           s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-          bytes = random._urandom(10000)
+          bytes = random._urandom(1024)
           #####################################################
           host = input(Fore.GREEN + "Target IP: ")
           time.sleep(1)
