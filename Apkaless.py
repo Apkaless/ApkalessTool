@@ -28,7 +28,6 @@ try:
           os.system("chmod +x updater.sh")
           os.system("./updater.sh")
           time.sleep(2)
-          exit()
 
      def gethostbyname1():
           print(Style.BRIGHT)
