@@ -34,5 +34,5 @@ echo "All Done"
 sleep 2
 cd ApkalessTool
 sleep 2
+echo "Please Wait..."
 python3 Apkaless.py
-echo "Please Wait..." 
