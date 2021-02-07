@@ -15,9 +15,11 @@ try:
      import requests
      import platform
      import who_is_on_my_wifi
+     import urllib.request
      # code started
 
      # This is Code For Hostname Tool
+
      def updateTool():
           os.system("clear")
           print("Getting Premssion...")
@@ -432,6 +434,23 @@ try:
           os.system("clear")
           os.system("figlet Apkaless")
           print("")
+          print("Checking Internet Connection...")
+          time.sleep(5)
+          os.system("clear")
+          os.system("figlet Apkaless")
+          print("")
+          try:
+               url = "https://google.com"
+               timeout = 5
+               request = requests.get(url, timeout=timeout)
+               print("Connected")
+               time.sleep(2)
+          except (requests.ConnectionError, requests.Timeout) as exception:
+               print("No Internet Connection.")
+               exit()
+          os.system("clear")
+          os.system("figlet Apkaless")
+          print("")
           print("Checking System...")
           time.sleep(2)
           os.system("clear")
@@ -470,6 +489,7 @@ try:
      #       input("Press Enter To Exit....")
 
      # #code ended
+
 except ModuleNotFoundError:
      import os
      import sys
