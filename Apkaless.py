@@ -382,7 +382,10 @@ try:
                if starthacking == "4":
                     scraper()
                if starthacking == "5":
-                    wifiPassword()
+                    if platform.machine()=="AMD64":
+                         wifiPassword()
+                    else:
+                         print("This Option Is Not For Your Machine.")
                if starthacking == "6":
                     videoDownload()
                if starthacking == "7":
