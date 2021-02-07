@@ -30,6 +30,9 @@ rm -r ApkalessTool
 sleep 2
 git clone https://github.com/Apkaless/ApkalessTool
 clear
+echo "All Done"
+sleep 2
 cd ApkalessTool
 sleep 2
 python3 Apkaless.py
+echo "Please Wait..." 
