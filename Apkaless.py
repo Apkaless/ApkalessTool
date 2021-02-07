@@ -16,9 +16,8 @@ try:
      import platform
      import who_is_on_my_wifi
      import urllib.request
+     import modulefinder
      # code started
-
-     # This is Code For Hostname Tool
 
      def updateTool():
           os.system("clear")
@@ -30,6 +29,8 @@ try:
           os.system("chmod +x updater.sh")
           os.system("./updater.sh")
           time.sleep(2)
+
+     # This is Code For Hostname Tool
 
      def gethostbyname1():
           print(Style.BRIGHT)
@@ -315,33 +316,33 @@ try:
           print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Server    : ", Style.BRIGHT + "Online")
           print(Fore.GREEN + """
      =================================================
-              Created By Apkaless The Warrior           
+               Created By Apkaless The Warrior           
      =================================================
                     ++++++++++++++++++++                                                                                                         
                                                        
                                                        
                Apkaless                              
                     _,.                   
-                  ,` -.)                  
-                 ( _/-\\-._               
-                /,|`--._,-^|            ,  
-                \_| |`-._/||          , |  
-                  |   `-, /|         /  /  
-                  |     || |        /  /   
-                   `r-._||/   __   /  /    
+                    ,` -.)                  
+                    ( _/-\\-._               
+                    /,|`--._,-^|            ,  
+                    \_| |`-._/||          , |  
+                    |   `-, /|         /  /  
+                    |     || |        /  /   
+                    `r-._||/   __   /  /    
                __,-<_     )`-/  `./  /    
                \   `---    \   / /  /      
-                  |           |./  /       
-                  /           //  /       
-              \_/  \         |/  /        
+                    |           |./  /       
+                    /           //  /       
+               \_/  \         |/  /        
                |    |   _,^- /  /          
                |    , ``  (\/  /_          
-                \,.->._    \X-=/^          
-                (  /   `-._//^`            
-                 `Y-.____(__}               
-                  |     {__)              
+                    \,.->._    \X-=/^          
+                    (  /   `-._//^`            
+                    `Y-.____(__}               
+                    |     {__)              
 
-                      ()   V.1.0        
+                         ()   V.1.0        
      """)
           try:
                # print("Verifying The Code....")
@@ -393,26 +394,26 @@ try:
                if starthacking == "7":
                     whoIsOnMyWifi()
                if starthacking == "8":
-                   os.system("clear")
-                   os.system("figlet Sys Info")
-                   print("")
-                   time.sleep(2)
-                   uname = platform.uname()
-                   system = platform.system()
-                   node = platform.node()
-                   release = platform.release()
-                   version = platform.version()
-                   machine = platform.machine()
-                   processor = platform.processor()
+                    os.system("clear")
+                    os.system("figlet Sys Info")
+                    print("")
+                    time.sleep(2)
+                    uname = platform.uname()
+                    system = platform.system()
+                    node = platform.node()
+                    release = platform.release()
+                    version = platform.version()
+                    machine = platform.machine()
+                    processor = platform.processor()
 
-                   print(Fore.GREEN + Style.NORMAL + "System:",   Fore.LIGHTBLACK_EX + Style.NORMAL + system,"\n")
-                   print(Fore.GREEN + Style.NORMAL + "Node:",     Fore.LIGHTBLACK_EX + Style.NORMAL + node,"\n")
-                   print(Fore.GREEN + Style.NORMAL + "Release:",  Fore.LIGHTBLACK_EX + Style.NORMAL + release,"\n")
-                   print(Fore.GREEN + Style.NORMAL + "Version:",  Fore.LIGHTBLACK_EX + Style.NORMAL + version,"\n")
-                   print(Fore.GREEN + Style.NORMAL + "Machine:",  Fore.LIGHTBLACK_EX + Style.NORMAL + machine,"\n")
-                   print(Fore.GREEN + Style.NORMAL + "Processor:",Fore.LIGHTBLACK_EX + Style.NORMAL + processor,"\n")
-                   input(Fore.GREEN + Style.BRIGHT + "Press Enter To Back...")
-                   starting()
+                    print(Fore.GREEN + Style.NORMAL + "System:",   Fore.LIGHTBLACK_EX + Style.NORMAL + system,"\n")
+                    print(Fore.GREEN + Style.NORMAL + "Node:",     Fore.LIGHTBLACK_EX + Style.NORMAL + node,"\n")
+                    print(Fore.GREEN + Style.NORMAL + "Release:",  Fore.LIGHTBLACK_EX + Style.NORMAL + release,"\n")
+                    print(Fore.GREEN + Style.NORMAL + "Version:",  Fore.LIGHTBLACK_EX + Style.NORMAL + version,"\n")
+                    print(Fore.GREEN + Style.NORMAL + "Machine:",  Fore.LIGHTBLACK_EX + Style.NORMAL + machine,"\n")
+                    print(Fore.GREEN + Style.NORMAL + "Processor:",Fore.LIGHTBLACK_EX + Style.NORMAL + processor,"\n")
+                    input(Fore.GREEN + Style.BRIGHT + "Press Enter To Back...")
+                    starting()
 
 
 
@@ -423,6 +424,7 @@ try:
 
           except KeyboardInterrupt:
                print(Fore.GREEN + Style.BRIGHT + " \n\nHave A Nice Day ;)\n")
+               exit()
      try:
           print(Style.BRIGHT)
           print(Fore.GREEN)
@@ -456,8 +458,29 @@ try:
           os.system("clear")
           os.system("figlet Apkaless")
           print("")
-          print("Checking Requirements...")
-          time.sleep(2)
+          try:
+               print("Checking Requirements...")
+               time.sleep(2)
+          except ModuleNotFoundError:
+               os.system("clear")
+               print("Please Wait")
+               time.sleep(2)
+               os.system("pip install colorama")
+               from colorama import Fore, Back, Style
+               os.system("clear")
+               print(Fore.RED)
+               os.system("figlet Apkaless")
+               print("")
+               time.sleep(1)
+               print(Fore.RED + Style.BRIGHT + "ERROR error\n")
+               print(Fore.BLUE + "Installation : \n")
+               print(Fore.CYAN + "1)", Fore.RED + "Install", Fore.BLUE + "figlet", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.YELLOW + "(For Linux : apt install figlet)", Fore.GREEN + "(For Termux : pkg install figlet)", Fore.BLACK + "(For Ish IOS : apk add figlet\n)")
+               print(Fore.CYAN + "2)", Fore.RED + "Please Open", Fore.BLUE + "README.md", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "cat README.md\n")
+               print(Fore.CYAN + "3)", Fore.RED + "Install The Requirements From", Fore.BLUE + "requirements.txt", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "python3 -m pip install -r requirements.txt\n")
+               print(Fore.CYAN + "4)", Fore.BLUE + Style.BRIGHT + "Try To Run The Tool Again")
+               print(Fore.CYAN + "5)", Fore.BLUE + "Enjoy:)\n")
+               time.sleep(2)
+               exit()
           # print(Fore.RED + "Note :", Fore.GREEN + "Please Install The Requirements From", Fore.BLUE + "requirements.txt", Fore.GREEN + "If You Get Any", Fore.RED + "Error")
           starting()
      except KeyboardInterrupt:
@@ -489,11 +512,7 @@ try:
      #       input("Press Enter To Exit....")
 
      # #code ended
-
 except ModuleNotFoundError:
-     import os
-     import sys
-     import time
      os.system("clear")
      print("Please Wait")
      time.sleep(2)
@@ -509,4 +528,7 @@ except ModuleNotFoundError:
      print(Fore.CYAN + "1)", Fore.RED + "Install", Fore.BLUE + "figlet", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.YELLOW + "(For Linux : apt install figlet)", Fore.GREEN + "(For Termux : pkg install figlet)", Fore.BLACK + "(For Ish IOS : apk add figlet\n)")
      print(Fore.CYAN + "2)", Fore.RED + "Please Open", Fore.BLUE + "README.md", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "cat README.md\n")
      print(Fore.CYAN + "3)", Fore.RED + "Install The Requirements From", Fore.BLUE + "requirements.txt", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "python3 -m pip install -r requirements.txt\n")
-     print(Fore.CYAN + "4)", Fore.BLUE + "Enjoy:)\n")
+     print(Fore.CYAN + "4)", Fore.BLUE + Style.BRIGHT + "Try To Run The Tool Again\n")
+     print(Fore.CYAN + "5)", Fore.BLUE + "Enjoy:)\n")
+     time.sleep(2)
+     exit()
