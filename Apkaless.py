@@ -357,7 +357,7 @@ try:
 
           [4] Proxy Scraper
 
-          [5] Wifi Password (This Option Work On Windows Only)
+          [5] Wifi Password
 
           [6] YouTube Video Download
 
