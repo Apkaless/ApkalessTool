@@ -386,6 +386,8 @@ try:
                          wifiPassword()
                     else:
                          print("This Option Is Not For Your Machine.")
+                         time.sleep(5)
+                         starting()
                if starthacking == "6":
                     videoDownload()
                if starthacking == "7":
