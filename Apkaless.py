@@ -107,17 +107,17 @@ try:
           sent = 0
           os.system("clear")
           os.system("figlet DDos Starting.....")
-          # time.sleep(2)
-          # print(Fore.GREEN + "[=======] 0%")
-          # time.sleep(1)
-          # print(Fore.GREEN + "[===============] 25%")
-          # time.sleep(1)
-          # print(Fore.GREEN + "[======================] 50%")
-          # time.sleep(1)
-          # print(Fore.GREEN + "[==========================] 75%")
-          # time.sleep(1)
-          # print(Fore.GREEN + "[===============================] 100%")
-          # time.sleep(1)
+          time.sleep(2)
+          print(Fore.GREEN + "[=======] 0%")
+          time.sleep(1)
+          print(Fore.GREEN + "[===============] 25%")
+          time.sleep(1)
+          print(Fore.GREEN + "[======================] 50%")
+          time.sleep(1)
+          print(Fore.GREEN + "[==========================] 75%")
+          time.sleep(1)
+          print(Fore.GREEN + "[===============================] 100%")
+          time.sleep(1)
           while True:
                # try: 
                from datetime import datetime
@@ -447,7 +447,7 @@ try:
                     starting()
                
                if starthacking=="9":
-                    wavFile = "ApkalessTool/Afraid.wav"
+                    wavFile = "/root/ApkalessTool/Afraid.wav"
                     playsound(wavFile)
 
                if starthacking == "10":
