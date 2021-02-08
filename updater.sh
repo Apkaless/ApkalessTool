@@ -34,5 +34,6 @@ echo "All Done"
 sleep 2
 cd ApkalessTool
 sleep 2
+python3 -m pip install requirements.txt
 echo "Please Wait..."
 python3 Apkaless.py

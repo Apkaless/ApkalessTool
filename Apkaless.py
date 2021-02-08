@@ -18,6 +18,11 @@ try:
      import urllib.request
      import modulefinder
      import datetime
+     from pydub import AudioSegment
+     from pydub.playback import play
+     from pygame import mixer
+     from playsound import playsound
+
      # code started
 
      def updateTool():
@@ -285,7 +290,10 @@ try:
                print("")
                audios[audioNumber].download()
                print(Fore.GREEN + "\nYour Audio File Successfully Downloaded\n")
-               print(Fore.GREEN + "Your Audio File Path: /root\n")
+               if platform.machine()=="x86_64":
+                    print(Fore.GREEN + "Your Audio File Path: /root/ApkalessTool/")
+               else:
+                    print(Fore.GREEN + "Your Audio File Path: ApkalessTool/")
                input(Fore.GREEN + "Press Enter To Back.....")
                starting()
 
@@ -382,8 +390,10 @@ try:
           [7] Who Is On My Wifi
           
           [8] System Informations
-          
-          [9] Update Tool\n""",
+
+          [9] Play Music
+
+          [10] Update Tool\n""",
                                         
           "\nPress", Fore.BLUE + Style.NORMAL + "Ctrl", Fore.GREEN + Style.BRIGHT + "+", Fore.RED + Style.NORMAL + "C", Fore.GREEN + Style.BRIGHT + "To Exit From This Tool.\n")
 
@@ -431,10 +441,12 @@ try:
                     print(Fore.GREEN + Style.NORMAL + "Processor:",Fore.LIGHTBLACK_EX + Style.NORMAL + processor,"\n")
                     input(Fore.GREEN + Style.BRIGHT + "Press Enter To Back...")
                     starting()
+               
+               if starthacking=="9":
+                    wavFile = "ApkalessTool/Afraid.wav"
+                    playsound(wavFile)
 
-
-
-               if starthacking == "9":
+               if starthacking == "10":
                     updateTool()
 
 
@@ -511,7 +523,7 @@ try:
      # #code ended
 except ModuleNotFoundError:
      os.system("clear")
-     print("Please Wait")
+     print(Fore.RED + Style.BRIGHT + "Error With Requirements")
      time.sleep(2)
      os.system("pip install colorama")
      from colorama import Fore, Back, Style
