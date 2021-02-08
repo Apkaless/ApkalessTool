@@ -1,3 +1,7 @@
+from modulefinder import ModuleFinder
+from sys import path
+
+
 try:
      import socket
      import sys
@@ -14,6 +18,7 @@ try:
      import marshal
      import requests
      import platform
+     import modulefinder
      import who_is_on_my_wifi
      import urllib.request
      import modulefinder
@@ -522,22 +527,80 @@ try:
 
      # #code ended
 except ModuleNotFoundError:
-     os.system("clear")
-     print(Fore.RED + Style.BRIGHT + "Error With Requirements")
-     time.sleep(2)
-     os.system("pip install colorama")
-     from colorama import Fore, Back, Style
-     os.system("clear")
-     print(Fore.RED)
-     os.system("figlet Apkaless")
-     print("")
-     time.sleep(1)
-     print(Fore.RED + Style.BRIGHT + "ERROR error\n")
-     print(Fore.BLUE + "Installation : \n")
-     print(Fore.CYAN + "1)", Fore.RED + "Install", Fore.BLUE + "figlet", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.YELLOW + "(For Linux : apt install figlet)", Fore.GREEN + "(For Termux : pkg install figlet)", Fore.BLACK + "(For Ish IOS : apk add figlet\n)")
-     print(Fore.CYAN + "2)", Fore.RED + "Please Open", Fore.BLUE + "README.md", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "cat README.md\n")
-     print(Fore.CYAN + "3)", Fore.RED + "Install The Requirements From", Fore.BLUE + "requirements.txt", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "python3 -m pip install -r requirements.txt\n")
-     print(Fore.CYAN + "4)", Fore.BLUE + Style.BRIGHT + "Try To Run The Tool Again\n")
-     print(Fore.CYAN + "5)", Fore.BLUE + "Enjoy:)\n")
-     time.sleep(2)
-     exit()
+     import os
+     import sys
+     import time
+     import modulefinder
+     import platform
+     def moduleFinder_x86_64():
+          module = modulefinder.ModuleFinder(path=['/usr/local/lib/python3.9/dist-packages/colorama/', '/usr/local/lib/python3.8/dist-packages/colorama/'])
+          if module is FileNotFoundError:
+               time.sleep(10)
+               os.system("clear")
+               time.sleep(2)
+               os.system("pip install colorama")
+          else:
+               from colorama import Fore, Back, Style
+               os.system("clear")
+               print(Fore.RED)
+               os.system("figlet Apkaless")
+               print("")
+               time.sleep(1)
+               print(Fore.RED + Style.BRIGHT + "ERROR error\n")
+               print(Fore.BLUE + "Installation : \n")
+               print(Fore.CYAN + "1)", Fore.RED + "Install", Fore.BLUE + "figlet", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.YELLOW + "(For Linux : apt install figlet)", Fore.GREEN + "(For Termux : pkg install figlet)", Fore.BLACK + "(For Ish IOS : apk add figlet\n)")
+               print(Fore.CYAN + "2)", Fore.RED + "Please Open", Fore.BLUE + "README.md", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "cat README.md\n")
+               print(Fore.CYAN + "3)", Fore.RED + "Install The Requirements From", Fore.BLUE + "requirements.txt", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "python3 -m pip install -r requirements.txt\n")
+               print(Fore.CYAN + "4)", Fore.BLUE + Style.BRIGHT + "Try To Run The Tool Again\n")
+               print(Fore.CYAN + "5)", Fore.BLUE + "Enjoy:)\n")
+               time.sleep(2)
+               exit()
+     def moduleFinder_i686():
+          modulePython3x8 = modulefinder.ModuleFinder(path='/usr/lib/python3.8/ste-packages/colorama/')
+          modulePython3x9 = modulefinder.ModuleFinder(path='/usr/lib/python3.8/ste-packages/colorama/')
+          if modulePython3x8 is FileNotFoundError:
+               os.system("clear")
+               time.sleep(2)
+               os.system("pip install colorama")
+          elif modulePython3x9 is FileNotFoundError:
+               os.system("clear")
+               time.sleep(2)
+               os.system("pip install colorama")
+          else:
+               from colorama import Fore, Back, Style
+               os.system("clear")
+               print(Fore.RED)
+               os.system("figlet Apkaless")
+               print("")
+               time.sleep(1)
+               print(Fore.RED + Style.BRIGHT + "ERROR error\n")
+               print(Fore.BLUE + "Installation : \n")
+               print(Fore.CYAN + "1)", Fore.RED + "Install", Fore.BLUE + "figlet", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.YELLOW + "(For Linux : apt install figlet)", Fore.GREEN + "(For Termux : pkg install figlet)", Fore.BLACK + "(For Ish IOS : apk add figlet\n)")
+               print(Fore.CYAN + "2)", Fore.RED + "Please Open", Fore.BLUE + "README.md", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "cat README.md\n")
+               print(Fore.CYAN + "3)", Fore.RED + "Install The Requirements From", Fore.BLUE + "requirements.txt", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "python3 -m pip install -r requirements.txt\n")
+               print(Fore.CYAN + "4)", Fore.BLUE + Style.BRIGHT + "Try To Run The Tool Again\n")
+               print(Fore.CYAN + "5)", Fore.BLUE + "Enjoy:)\n")
+               time.sleep(2)
+               exit()
+     if platform.machine()=='x86_64':
+          moduleFinder_x86_64()
+     elif platform.machine()=='i686':
+          moduleFinder_i686()
+     else:
+          os.system("clear")
+          os.system("pip install colorama")
+          time.sleep(2)
+          from colorama import Fore, Back, Style
+          os.system("clear")
+          os.system("figlet Apkaless")
+          print("")
+          time.sleep(1)
+          print(Fore.RED + Style.BRIGHT + "ERROR error\n")
+          print(Fore.BLUE + "Installation : \n")
+          print(Fore.CYAN + "1)", Fore.RED + "Install", Fore.BLUE + "figlet", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.YELLOW + "(For Linux : apt install figlet)", Fore.GREEN + "(For Termux : pkg install figlet)", Fore.BLACK + "(For Ish IOS : apk add figlet\n)")
+          print(Fore.CYAN + "2)", Fore.RED + "Please Open", Fore.BLUE + "README.md", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "cat README.md\n")
+          print(Fore.CYAN + "3)", Fore.RED + "Install The Requirements From", Fore.BLUE + "requirements.txt", Fore.RED + "File", Fore.MAGENTA + "Type This Command Line", Fore.BLUE + "-->", Fore.GREEN + "python3 -m pip install -r requirements.txt\n")
+          print(Fore.CYAN + "4)", Fore.BLUE + Style.BRIGHT + "Try To Run The Tool Again\n")
+          print(Fore.CYAN + "5)", Fore.BLUE + "Enjoy:)\n")
+          time.sleep(2)
+          exit()
