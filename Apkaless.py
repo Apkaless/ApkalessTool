@@ -25,7 +25,6 @@ try:
      import datetime
      from pydub import AudioSegment
      from pydub.playback import play
-     from pygame import mixer
      from playsound import playsound
 
      # code started

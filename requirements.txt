@@ -7,5 +7,4 @@ requests
 youtube-dl
 who_is_on_my_wifi
 playsound
-pygame
 pydub
