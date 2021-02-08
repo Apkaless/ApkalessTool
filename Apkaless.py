@@ -332,7 +332,8 @@ try:
           print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Server    : ", Style.BRIGHT + "Online")
           print(Fore.GREEN + """
 '================================================='
-'               Created By Apkaless               ' 
+'        Created By Apkaless The Warrior          '
+'                                                 ' 
 '================================================='
 '               ++++++++++++++++++++              '
 '                                                 '
