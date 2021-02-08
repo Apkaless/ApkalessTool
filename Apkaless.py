@@ -331,10 +331,9 @@ try:
           print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Instagram : ", Style.BRIGHT + "https://www.instagram.com/Apkaless")
           print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Server    : ", Style.BRIGHT + "Online")
           print(Fore.GREEN + """ =================================================
- 	    create by Apkaless The Warrios             
+ 	    Created by Apkaless The Warrior             
  =================================================
-                ++++++++++++++++++++              
-'\n                                               
+                ++++++++++++++++++++                                                             
 '  _,.                                           
 '                                                 
 '                                                 
