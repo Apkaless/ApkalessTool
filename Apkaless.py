@@ -330,10 +330,10 @@ try:
           print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Facebook  : ", Style.BRIGHT + "https://www.facebook.com/Apkaless")
           print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Instagram : ", Style.BRIGHT + "https://www.instagram.com/Apkaless")
           print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Server    : ", Style.BRIGHT + "Online")
-          print(Fore.GREEN + """   =================================================
+          print(Fore.GREEN + """  =================================================
 
  	    Created by Apkaless The Warrior             
-   =================================================
+  =================================================
                 ++++++++++++++++++++                                                             
                                              
                                                  
@@ -454,7 +454,7 @@ try:
           os.system("figlet Apkaless")
           print("")
           print("Checking Internet Connection...")
-          time.sleep(5)
+          time.sleep(2)
           os.system("clear")
           os.system("figlet Apkaless")
           print("")
