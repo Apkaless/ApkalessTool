@@ -388,7 +388,7 @@ try:
           [8] System Informations
 
           [9] Play Music
-          
+
           [10] Update Tool\n""",
                                         
           "\nPress", Fore.BLUE + Style.NORMAL + "Ctrl", Fore.GREEN + Style.BRIGHT + "+", Fore.RED + Style.NORMAL + "C", Fore.GREEN + Style.BRIGHT + "To Exit From This Tool.\n")
