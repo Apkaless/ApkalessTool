@@ -1,7 +1,3 @@
-from modulefinder import ModuleFinder
-from sys import path
-
-
 try:
      import socket
      import sys
@@ -26,12 +22,13 @@ try:
      from pydub import AudioSegment
      from pydub.playback import play
      from playsound import playsound
+     from core import *
 
      # code started
 
      def updateTool():
           os.system("clear")
-          print("Getting Premssion...")
+          print("Getting Permission...")
           time.sleep(2)
           os.system("clear")
           print("Updating...")
@@ -304,9 +301,7 @@ try:
           streamType = input(Fore.GREEN + """Select Option:
                                         
                     1) Video 
-
                     2) Audio File
-
           Enter Number 1 OR 2 : """)
 
           if streamType == "1":
@@ -343,7 +338,6 @@ try:
           print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Instagram : ", Style.BRIGHT + "https://www.instagram.com/Apkaless")
           print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Server    : ", Style.BRIGHT + "Online")
           print(Fore.GREEN + """  =================================================
-
  	    Created By Apkaless The Warrior             
   =================================================
                 ++++++++++++++++++++                                                             
@@ -370,7 +364,6 @@ try:
     (  /   `-._//^`
      `Y-.____(__}
       |     {__)
-
            ()   V.1.0
 """)
           try:
@@ -380,23 +373,15 @@ try:
 
                print(Fore.GREEN + Style.BRIGHT + """What Do You Want?\n
           [1] Get IP Tool
-
           [2] Scanner Tool
-
           [3] DDos Tool
-
           [4] Proxy Scraper
-
           [5] Get Your Wifi Password
-
           [6] YouTube Video Download
-
           [7] Who Is On My Wifi
           
           [8] System Informations
-
           [9] Play Music
-
           [10] Update Tool\n""",
                                         
           "\nPress", Fore.BLUE + Style.NORMAL + "Ctrl", Fore.GREEN + Style.BRIGHT + "+", Fore.RED + Style.NORMAL + "C", Fore.GREEN + Style.BRIGHT + "To Exit From This Tool.\n")
