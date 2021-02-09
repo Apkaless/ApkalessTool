@@ -22,7 +22,6 @@ try:
      from pydub import AudioSegment
      from pydub.playback import play
      from playsound import playsound
-     from core import *
 
      # code started
 
