@@ -35,6 +35,19 @@ try:
           os.system("chmod +x updater.sh")
           os.system("./updater.sh")
           time.sleep(2)
+          
+     def slowprint(s):
+          for c in s + '\n':
+               sys.stdout.write(c)
+               sys.stdout.flush()
+               time.sleep(1./20)
+     
+     def fastprint(s):
+          print(Fore.GREEN + Style.BRIGHT)
+          for c in s + '\n':
+               sys.stdout.write(c)
+               sys.stdout.flush()
+               time.sleep(1./90)
 
      # This is Code For Hostname Tool
 
@@ -267,17 +280,27 @@ try:
           def forVideo():
 
                streams = video.streams
+               title = video.title
                i = 0 
                for stream in streams:
                     print("\n",str(i),"-",stream,"\n")
                     i += 1
                streamNumber = int(input(Fore.GREEN + "Enter Number 0 OR 1 : "))
                print(Fore.GREEN + "\nYour Option : ",streamNumber,"\n")
-               streams[streamNumber].download()
-               print(Fore.GREEN + "\nYour Video Successfully Downloaded\n")
-               print(Fore.GREEN + "Your Video Path : /root\n")
-               input(Fore.GREEN + "Press Enter To Back..... ")
-               starting()
+               if platform.machine()=="x86_64":
+                    streams[streamNumber].download()
+                    print("Video Title : ", title)
+                    print(Fore.GREEN + "\nYour Video Successfully Downloaded\n")
+                    print(Fore.GREEN + "Your Video Path : /root/ApkalessTool/YourVideo")
+                    input(Fore.GREEN + "Press Enter To Back..... ")
+                    starting()
+               else:
+                    streams[streamNumber].download()
+                    print("Video Title : ", title)
+                    print(Fore.GREEN + "\nYour Video Successfully Downloaded\n")
+                    print(Fore.GREEN + "Your Video Path : ApkalessTool/YourVideo")
+                    input(Fore.GREEN + "Press Enter To Back..... ")
+                    starting()
 
           def forAudio():
 
@@ -288,14 +311,18 @@ try:
                     a += 1
                audioNumber = int(input(Fore.GREEN + "Enter Number: "))
                print("")
-               audios[audioNumber].download()
-               print(Fore.GREEN + "\nYour Audio File Successfully Downloaded\n")
                if platform.machine()=="x86_64":
-                    print(Fore.GREEN + "Your Audio File Path: /root/ApkalessTool/")
+                    audios[audioNumber].download()
+                    print(Fore.GREEN + "\nYour Audio File Successfully Downloaded\n")
+                    print(Fore.GREEN + "Your Audio File Path: /root/ApkalessTool/YourVideo")
+                    input(Fore.GREEN + "Press Enter To Back..... ")
+                    starting()
                else:
-                    print(Fore.GREEN + "Your Audio File Path: ApkalessTool/")
-               input(Fore.GREEN + "Press Enter To Back.....")
-               starting()
+                    audios[audioNumber].download()
+                    print(Fore.GREEN + "\nYour Audio File Successfully Downloaded\n")
+                    print(Fore.GREEN + "Your Audio File Path: ApkalessTool/YourVideo")
+                    input(Fore.GREEN + "Press Enter To Back.....")
+                    starting()
 
           streamType = input(Fore.GREEN + """Select Option:
                                         
@@ -326,6 +353,7 @@ try:
           os.system("figlet Apkaless")
           time.sleep(1)
           print("")
+          slowprint("Hello Citizen Of The World.\n")
           print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Creator   : ", Style.BRIGHT + "APKALESS (SABAH)")
           print(Fore.BLACK + Style.BRIGHT + "[☣]", Fore.LIGHTBLACK_EX + Style.NORMAL + " Creator   : ", Style.BRIGHT + "ABDULLAH")
           print(Fore.RED   + Style.BRIGHT + "[☣]", Fore.RED + Style.NORMAL + " Creator   : ", Style.BRIGHT + "AMEER")
@@ -336,16 +364,14 @@ try:
           print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Facebook  : ", Style.BRIGHT + "https://www.facebook.com/Apkaless")
           print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Instagram : ", Style.BRIGHT + "https://www.instagram.com/Apkaless")
           print(Fore.GREEN + Style.BRIGHT + "[☣]", Fore.GREEN + Style.NORMAL + " Server    : ", Style.BRIGHT + "Online")
-          print(Fore.GREEN + """  =================================================
+          fastprint("""  =================================================
  	    Created By Apkaless The Warrior             
   =================================================
-                ++++++++++++++++++++                                                             
-                                             
-                                                 
-                                                 
-            Apkaless                              
+                ++++++++++++++++++++
+             
+            Apkaless              
         _,.                  
-      ,` -.)               
+      ,` -.)         
      ( _/-\\-._ 
     /,|`--._,-^|            ,
     \_| |`-._/||          , |
@@ -370,7 +396,7 @@ try:
                # time.sleep(2)
                # print("")
 
-               print(Fore.GREEN + Style.BRIGHT + """What Do You Want?\n
+               fastprint("""What Do You Want?\n
           [1] Get IP Tool
 
           [2] Scanner Tool
@@ -389,9 +415,9 @@ try:
 
           [9] Play Music
 
-          [10] Update Tool\n""",
+          [10] Update Tool\n""")
                                         
-          "\nPress", Fore.BLUE + Style.NORMAL + "Ctrl", Fore.GREEN + Style.BRIGHT + "+", Fore.RED + Style.NORMAL + "C", Fore.GREEN + Style.BRIGHT + "To Exit From This Tool.\n")
+               print("\nPress", Fore.BLUE + Style.NORMAL + "Ctrl", Fore.GREEN + Style.BRIGHT + "+", Fore.RED + Style.NORMAL + "C", Fore.GREEN + Style.BRIGHT + "To Exit From This Tool.\n")
 
                starthacking = input("""
                
@@ -409,8 +435,8 @@ try:
                     if platform.machine()=="AMD64":
                          wifiPassword()
                     else:
-                         print("\nThis Option Is Not For Your Machine.")
-                         time.sleep(5)
+                         slowprint("\nThis Option Is Not For Your Machine.")
+                         time.sleep(2)
                          starting()
                if starthacking == "6":
                     videoDownload()
@@ -457,7 +483,7 @@ try:
           os.system("figlet Apkaless")
           print("")
           print(Fore.GREEN + "Please Wait While",Fore.BLUE + "Apkaless", Fore.GREEN + "Setting Up His Own Tool\n")
-          time.sleep(6)
+          time.sleep(2)
           os.system("clear")
           os.system("figlet Apkaless")
           print("")
