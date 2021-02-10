@@ -23,6 +23,7 @@ try:
      from pydub.playback import play
      from playsound import playsound
 
+
      # code started
 
      def updateTool():
@@ -307,7 +308,7 @@ try:
                audios = video.audiostreams
                a = 0
                for audio in audios:
-                    print(Fore.GREEN + "\n",str(a),"-",audio,"\n")
+                    print(Fore.GREEN + str(a),"-",audio,"\n")
                     a += 1
                audioNumber = int(input(Fore.GREEN + "Enter Number: "))
                print("")
@@ -328,6 +329,7 @@ try:
                                         
                     1) Video 
                     2) Audio File
+
           Enter Number 1 OR 2 : """)
 
           if streamType == "1":
