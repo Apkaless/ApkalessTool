@@ -409,21 +409,19 @@ try:
 
           [3] DDos Tool
 
-          [4] Proxy Scraper
+          [4] UFONet
 
-          [5] Get Your Wifi Password
+          [5] Proxy Scraper
 
-          [6] YouTube Video Download
+          [6] Get Your Wifi Password
 
-          [7] Who Is On My Wifi
+          [7] YouTube Video Download
 
-          [8] System Informations
+          [8] Who Is On My Wifi
 
-          [9] Play Music
+          [9] System Informations
 
-          [10] Update Tool
-          
-          [11] UFONet\n""")
+          [10] Update Tool\n""")
                                         
                print("\nPress", Fore.BLUE + Style.NORMAL + "Ctrl", Fore.GREEN + Style.BRIGHT + "+", Fore.RED + Style.NORMAL + "C", Fore.GREEN + Style.BRIGHT + "To Exit From This Tool.\n")
 
@@ -436,21 +434,23 @@ try:
                if starthacking == "2":
                     scanner()
                if starthacking == "3":
-                    ddostool()
+                    uFONet()
                if starthacking == "4":
-                    scraper()
+                    ddostool()
                if starthacking == "5":
+                    scraper()
+               if starthacking == "6":
                     if platform.machine()=="AMD64":
                          wifiPassword()
                     else:
                          slowprint("\nThis Option Is Not For Your Machine.")
                          time.sleep(2)
                          starting()
-               if starthacking == "6":
-                    videoDownload()
                if starthacking == "7":
-                    whoIsOnMyWifi()
+                    videoDownload()
                if starthacking == "8":
+                    whoIsOnMyWifi()
+               if starthacking=="9":
                     os.system("clear")
                     os.system("figlet Sys Info")
                     print("")
@@ -471,15 +471,9 @@ try:
                     print(Fore.GREEN + Style.NORMAL + "Processor:",Fore.LIGHTBLACK_EX + Style.NORMAL + processor,"\n")
                     input(Fore.GREEN + Style.BRIGHT + "Press Enter To Back...")
                     starting()
-               
-               if starthacking=="9":
-                    wavFile = "/root/ApkalessTool/Afraid.wav"
-                    playsound(wavFile)
 
                if starthacking == "10":
                     updateTool()
-               if starthacking == "11":
-                    uFONet()
 
 
 
