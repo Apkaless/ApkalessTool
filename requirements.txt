@@ -8,12 +8,3 @@ youtube-dl
 who_is_on_my_wifi
 playsound
 pydub
-pycurl
-GeoIP
-python-geoip
-pygeoip
-pycrypto
-pycurl
-whois
-scapy-python3
-ufonet
