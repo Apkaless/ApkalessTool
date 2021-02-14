@@ -8,7 +8,7 @@ Linux : apt install figlet
 
 Termux : pkg install figlet
 
-Ish IOS : apk add figlet
+Ish IOS : apk add figlet bash
 
 pip uninstall nmap
 
