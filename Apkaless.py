@@ -223,8 +223,9 @@ try:
      def uFONet():
           os.system("clear")
           os.system("figlet Apkaless")
-          os.system("chmod +x run.sh")
-          os.system("./run.sh")
+          os.system("chmod +x ufonet.sh")
+          os.system("./ufonet.sh")
+          
      def scraper():
           print(Style.BRIGHT)
           print(Fore.GREEN)
