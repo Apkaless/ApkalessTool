@@ -32,6 +32,7 @@ git clone https://github.com/Apkaless/ApkalessTool
 clear
 echo "All Done"
 sleep 2
+echo "Please Wait..."
 cd ApkalessTool
 python3 -m pip install -r requirements.txt
 sleep 2
