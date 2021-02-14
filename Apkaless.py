@@ -408,9 +408,9 @@ try:
 
           [2] Scanner Tool
 
-          [3] DDos Tool
+          [3] UFONet
 
-          [4] UFONet
+          [4] DDos Tool
 
           [5] Proxy Scraper
 
