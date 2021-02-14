@@ -10,3 +10,10 @@ playsound
 pydub
 ufonet
 pycurl
+GeoIP
+python-geoip
+pygeoip
+pycrypto
+pycurl
+whois
+scapy-python3
