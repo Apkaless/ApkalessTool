@@ -9,3 +9,4 @@ who_is_on_my_wifi
 playsound
 pydub
 ufonet
+pycurl
