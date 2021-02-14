@@ -30,11 +30,10 @@ rm -r ApkalessTool
 sleep 2
 git clone https://github.com/Apkaless/ApkalessTool
 clear
-echo "All Done"
-sleep 2
-echo "Please Wait..."
 cd ApkalessTool
 python3 -m pip install -r requirements.txt
-sleep 2
+echo "All Done"
+sleep 1
 echo "Please Wait..."
+sleep 1
 python3 Apkaless.py
