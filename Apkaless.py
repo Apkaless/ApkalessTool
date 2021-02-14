@@ -23,7 +23,6 @@ try:
      from pydub.playback import play
      from playsound import playsound
 
-
      # code started
 
      def updateTool():
@@ -221,6 +220,11 @@ try:
 
      # This The End Of The Code
 
+     def uFONet():
+          os.system("clear")
+          os.system("figlet Apkaless")
+          os.system("chmod +x run.sh")
+          os.system("./run.sh")
      def scraper():
           print(Style.BRIGHT)
           print(Fore.GREEN)
@@ -417,7 +421,9 @@ try:
 
           [9] Play Music
 
-          [10] Update Tool\n""")
+          [10] Update Tool
+          
+          [11] UFONet\n""")
                                         
                print("\nPress", Fore.BLUE + Style.NORMAL + "Ctrl", Fore.GREEN + Style.BRIGHT + "+", Fore.RED + Style.NORMAL + "C", Fore.GREEN + Style.BRIGHT + "To Exit From This Tool.\n")
 
@@ -472,6 +478,8 @@ try:
 
                if starthacking == "10":
                     updateTool()
+               if starthacking == "11":
+                    uFONet()
 
 
 
