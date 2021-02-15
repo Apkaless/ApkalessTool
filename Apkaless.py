@@ -219,12 +219,6 @@ try:
                print(Fore.RED + "Install The Requirements From", Fore.BLUE + "requirements.txt", "File")
 
      # This The End Of The Code
-
-     def uFONet():
-          os.system("clear")
-          os.system("figlet Apkaless")
-          os.system("chmod +x ufonet.sh")
-          os.system("./ufonet.sh")
           
      def scraper():
           print(Style.BRIGHT)
@@ -408,21 +402,19 @@ try:
 
           [2] Scanner Tool
 
-          [3] UFONet
+          [3] DDos Tool
 
-          [4] DDos Tool
+          [4] Proxy Scraper
 
-          [5] Proxy Scraper
+          [5] Get Your Wifi Password
 
-          [6] Get Your Wifi Password
+          [6] YouTube Video Download
 
-          [7] YouTube Video Download
+          [7] Who Is On My Wifi
 
-          [8] Who Is On My Wifi
+          [8] System Informations
 
-          [9] System Informations
-
-          [10] Update Tool\n""")
+          [9] Update Tool\n""")
                                         
                print("\nPress", Fore.BLUE + Style.NORMAL + "Ctrl", Fore.GREEN + Style.BRIGHT + "+", Fore.RED + Style.NORMAL + "C", Fore.GREEN + Style.BRIGHT + "To Exit From This Tool.\n")
 
@@ -435,23 +427,21 @@ try:
                if starthacking == "2":
                     scanner()
                if starthacking == "3":
-                    uFONet()
-               if starthacking == "4":
                     ddostool()
-               if starthacking == "5":
+               if starthacking == "4":
                     scraper()
-               if starthacking == "6":
+               if starthacking == "5":
                     if platform.machine()=="AMD64":
                          wifiPassword()
                     else:
                          slowprint("\nThis Option Is Not For Your Machine.")
                          time.sleep(2)
                          starting()
-               if starthacking == "7":
+               if starthacking == "6":
                     videoDownload()
-               if starthacking == "8":
+               if starthacking == "7":
                     whoIsOnMyWifi()
-               if starthacking=="9":
+               if starthacking == "8":
                     os.system("clear")
                     os.system("figlet Sys Info")
                     print("")
@@ -472,8 +462,7 @@ try:
                     print(Fore.GREEN + Style.NORMAL + "Processor:",Fore.LIGHTBLACK_EX + Style.NORMAL + processor,"\n")
                     input(Fore.GREEN + Style.BRIGHT + "Press Enter To Back...")
                     starting()
-
-               if starthacking == "10":
+               if starthacking=="9":
                     updateTool()
 
 
