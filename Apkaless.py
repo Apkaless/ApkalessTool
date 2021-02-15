@@ -537,7 +537,7 @@ try:
      #       input("Press Enter To Exit....")
 
      # #code ended
-except ConnectionError:
+except ModuleNotFoundError:
      import os
      import sys
      import time
