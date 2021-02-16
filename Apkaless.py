@@ -22,6 +22,7 @@ try:
      from pydub import AudioSegment
      from pydub.playback import play
      from playsound import playsound
+     from Proxy_List_Scrapper import Scrapper, Proxy, ScrapperException
 
      # code started
 
@@ -221,16 +222,19 @@ try:
      # This The End Of The Code
           
      def scraper():
-          print(Style.BRIGHT)
-          print(Fore.GREEN)
           os.system("clear")
-          os.system("figlet PROXY SCRAPER")
-          collector = proxyscrape.create_collector('default','socks4')
-          proxies = collector.get_proxies({'country' : 'united states'})
-          print(Fore.GREEN + "\nScraping Proxies.....\n")
-          time.sleep(5)
-          print(proxies)
-          input(Fore.GREEN + "\nPress Enter To Back..... ")
+          os.system("figlet Proxies")
+          print("")
+          scrapper = Scrapper(category='ALL', print_err_trace=False)
+          data = scrapper.getProxies()
+          print("Scrapped Proxies:\n")
+          for item in data.proxies:
+               print("{}:{}" .format(item.ip, item.port))
+               time.sleep(0.1)
+          print("\nTotal Proxies:", data.len)
+          print("\nCategory of the Proxy:", data.category)
+          print("")
+          input("Press Enter To Back...")
           starting()
 
      def wifiPassword():
@@ -404,7 +408,7 @@ try:
 
           [3] DDos Tool
 
-          [4] Proxy Scraper
+          [4] Proxy Scrapper
 
           [5] Get Your Wifi Password
 
