@@ -475,8 +475,6 @@ try:
                     input(Fore.GREEN + Style.BRIGHT + "Press Enter To Back...")
                     starting()
                if starthacking=="9":
-                    updateTool()
-               if starthacking=="10":
                     os.system("clear")
                     os.system("figlet Apkaless")
                     print("")
@@ -487,6 +485,9 @@ try:
                          payload_creator_windows()
                     if platform == "2" or platform == "Linux" or platform == "linux":
                          payload_creator_linux()
+
+               if starthacking=="10":
+                    updateTool() 
 
 
 
